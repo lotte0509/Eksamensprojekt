@@ -6,6 +6,18 @@ body{
     margin: 0;
     padding: 0;
 }
+.btn-box{
+    background-color: brown;
+    height: 120px;
+    width: 50px;
+}
+.fa-chevron-circle-right{
+    font-size: 2em;
+    color: red;
+    text-align: center;
+    transform: rotateY(50%);
+}
+
 
 /*CSS GRID NAMING*/
 
