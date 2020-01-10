@@ -8,19 +8,24 @@ body{
 }
 
 /*HERO*/
-/* .hero-img{
-    height: 200px;
-    width: 200px;
-} */
+.hero-img{
+    width: 100%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    transform: translate(0px, -500px);
+}
 /*MAIN*/
 .btn-box{
-    background-color: brown;
+    background-color: #5e0d18;
     height: 120px;
     width: 50px;
 }
 .fa-chevron-circle-right{
     font-size: 2em;
-    color: red;
+    color: #96192b;
     text-align: center;
     transform: rotateY(50%);
 }
@@ -35,8 +40,7 @@ body{
 .grid-container{
     display: grid;
     grid-template-areas: 
-    'hero hero hero'
-    'hero hero hero'
+    'hero hero hero'    
     'cobox cobox cobox'
     'cateringbox cateringbox cateringbox';
 }
