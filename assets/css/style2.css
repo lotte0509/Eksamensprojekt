@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.first-article { grid-area: first-a; }
+.first-image { grid-area: first-i; }
+.second-image { grid-area: second-i; }
+.second-article { grid-area: second-a; }
+.third-article { grid-area: third-a; }
+.third-image { grid-area: third-i; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'first-a first-a first-a first-i first-i'
+        'second-i second-i second-a second-a second-a'
+        'third-a third-a third-a third-i third-i';
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.historie {
+    
+}
+
+.first-image {
+    width: 20%;
+}
