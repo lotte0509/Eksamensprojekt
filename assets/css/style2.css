@@ -14,14 +14,48 @@
         'first-a first-a first-a first-i first-i'
         'second-i second-i second-a second-a second-a'
         'third-a third-a third-a third-i third-i';
+    grid-template-columns: ;
+}
 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.main {
+    margin: 0 0px;
+    display: block;
 }
 
 .historie {
-    
+    display: flex;
 }
 
+.first-article {
+    
+}
+h1 {
+    font-size: 1.5em;
+}
+p {
+    width: 380px;
+    line-height: 1.4em;
+}
 .first-image {
-    width: 20%;
+    height: 80vh;
+}
+
+.i-dag {
+    display: flex;
+}
+.second-image {
+    height: 80vh;
+}
+.second-article {
+
+}
+
+.mød-os {
+    display: flex;
+}
+.third-article {
+
+}
+.third-image {
+    height: 80vh;
 }
