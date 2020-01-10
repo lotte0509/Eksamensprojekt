@@ -6,6 +6,13 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/*HERO*/
+/* .hero-img{
+    height: 200px;
+    width: 200px;
+} */
+/*MAIN*/
 .btn-box{
     background-color: brown;
     height: 120px;
@@ -20,5 +27,17 @@ body{
 
 
 /*CSS GRID NAMING*/
-
+.name-hero {grid-area: hero;}
+.name-cobox {grid-area: cobox;}
+.name-cateringbox {grid-area: cateringbox;}
 /*PLACEMENT IN GRID - DESKTOP*/
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'hero hero hero'
+    'hero hero hero'
+    'cobox cobox cobox'
+    'cateringbox cateringbox cateringbox';
+}
+
