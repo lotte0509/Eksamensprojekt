@@ -87,12 +87,23 @@ nav{
     background-color: olivedrab;
 }
 
+.experience-menu{
+
+}
+
+.our-history{
+    width: 350px;
+    height: 350px;
+}
+
 
 /*CSS GRID NAMING*/
 .name-nav {grid-area: nav;}
 .name-hero {grid-area: hero;}
 .name-cobox {grid-area: cobox;}
 .name-cateringbox {grid-area: cateringbox;}
+.name-menu {grid-area: experience-menu;}
+.name-history {grid-area: our-history;}
 /*PLACEMENT IN GRID - DESKTOP*/
 
 .grid-container{
@@ -101,6 +112,7 @@ nav{
     'nav nav nav nav nav nav'
     'hero hero hero hero hero hero'     
     'cobox cobox cobox cateringbox cateringbox cateringbox'
+    'experience-menu experience-menu experience-menu our-history our-history our-history  '
     
     /* 'cobox cobox cobox cateringbox cateringbox cateringbox'; */
     ;
