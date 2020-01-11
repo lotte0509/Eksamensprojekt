@@ -1,34 +1,7 @@
 * {
     box-sizing: border-box;
 }
-.first-article { grid-area: first-a; }
-.first-image { grid-area: first-i; }
-.second-image { grid-area: second-i; }
-.second-article { grid-area: second-a; }
-.third-article { grid-area: third-a; }
-.third-image { grid-area: third-i; }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'first-a first-a first-a first-i first-i'
-        'second-i second-i second-a second-a second-a'
-        'third-a third-a third-a third-i third-i';
-    grid-template-columns: ;
-}
-
-.main {
-    margin: 0 0px;
-    display: block;
-}
-
-.historie {
-    display: flex;
-}
-
-.first-article {
-    
-}
 h1 {
     font-size: 1.5em;
 }
@@ -36,26 +9,64 @@ p {
     width: 380px;
     line-height: 1.4em;
 }
+.first-article { grid-area: 1 / 1 / 2 / 4; }
+.first-image { grid-area: 1 / 4 / 2 / 6; }
+.second-image { grid-area: 2 / 1 / 3 / 3; }
+.second-article { grid-area: 2 / 3 / 3 / 6; }
+.third-article { grid-area: 3 / 1 / 4 / 4; }
+.third-image { grid-area: 3 / 4 / 4 / 6; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.main {
+    margin: 0 0px;
+}
+
+.historie {
+    height: 45vh;
+}
+
+.first-article {
+    height: 45vh;
+}
+
 .first-image {
-    height: 80vh;
+    background-image: url(../images/bygning.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 45vh;
 }
 
 .i-dag {
-    display: flex;
+    height: 45vh;
 }
 .second-image {
-    height: 80vh;
+    background-image: url(../images/mette_stefan.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 45vh;
 }
+
 .second-article {
+    height: 45vh;
 
 }
 
 .mød-os {
-    display: flex;
+    height: 45vh;
+
 }
 .third-article {
+    height: 45vh;
 
 }
 .third-image {
-    height: 80vh;
+    background-image: url(../images/kokke.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 45vh;
 }
