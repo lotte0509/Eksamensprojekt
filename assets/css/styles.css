@@ -12,6 +12,7 @@ body{
     font-size: 2em;
     color: #96192b;
 }
+
 /*NAV & DROP DOWN*/
 nav{
     background-color: #5e0d18;
@@ -95,7 +96,10 @@ nav{
     width: 350px;
     height: 350px;
 }
-
+.our-history > img{
+    width: 100px;
+    height: 100px;
+}
 
 /*CSS GRID NAMING*/
 .name-nav {grid-area: nav;}
@@ -112,11 +116,11 @@ nav{
     'nav nav nav nav nav nav'
     'hero hero hero hero hero hero'     
     'cobox cobox cobox cateringbox cateringbox cateringbox'
-    'experience-menu experience-menu experience-menu our-history our-history our-history  '
+    'experience-menu experience-menu experience-menu our-history our-history our-history'
     
     /* 'cobox cobox cobox cateringbox cateringbox cateringbox'; */
     ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; */
 }
 
