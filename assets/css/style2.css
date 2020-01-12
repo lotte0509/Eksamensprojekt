@@ -46,7 +46,7 @@ footer { grid-area: footer; }
 }
 
 .first-image {
-    background-image: url(../images/bygning.jpg);
+    background-image: url('../images/bygning.jpg');
     background-size: cover;
     background-position: center bottom;
     height: 60vh;
@@ -56,7 +56,7 @@ footer { grid-area: footer; }
     height: 30vh;
 }
 .second-image {
-    background-image: url(../images/mette_stefan.jpg);
+    background-image: url('../images/mette_stefan.jpg');
     background-size: cover;
     background-position: center center;
     height: 30vh;
@@ -75,7 +75,7 @@ footer { grid-area: footer; }
 
 }
 .third-image {
-    background-image: url(../images/kokke.jpg);
+    background-image: url('../images/kokke.jpg');
     background-size: cover;
     background-position: center center;
     height: 40vh;
