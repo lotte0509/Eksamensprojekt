@@ -11,6 +11,7 @@ body{
 .icon{
     font-size: 2em;
     color: #96192b;
+    cursor: pointer;
 }
 
 /*NAV & DROP DOWN*/
@@ -25,7 +26,7 @@ nav{
 /*HERO*/
 .hero{
     width: 100%;
-    height: 620px;
+    height: 624px;
     border: 1px solid orange; /*just to keep track of it*/
     transform: translateY(30px);
 }
@@ -57,15 +58,16 @@ nav{
 /*MAIN*/
 .cobox-index, .catering-box-index{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* flex-flow: row wrap; */
+    /* justify-content: space-evenly; */
     transform: translate(60px, 60px);
     height: 200px;
-    
+    margin: 0 5px 10px 25px;
 }
 .co-text-index, .ca-text-index{
     display: inline-block;
     background-color: white;
+    width: 50%;
 }
 .btn-box{
     background-color: #5e0d18;
@@ -83,7 +85,7 @@ nav{
     height: 100px;
 }
 .small-box{
-    width: 100%;
+    width: 50%;
     height: 100px;
     background-color: olivedrab;
 }
@@ -98,7 +100,9 @@ nav{
     height: 150px;
 }
 .menu-text{
-
+    background-color: white;
+    width: 300px;
+    height: 200px;
 }
 
 .our-history{
