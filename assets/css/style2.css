@@ -6,67 +6,77 @@ h1 {
     font-size: 1.5em;
 }
 p {
-    width: 380px;
     line-height: 1.4em;
 }
-.first-article { grid-area: 1 / 1 / 2 / 4; }
-.first-image { grid-area: 1 / 4 / 2 / 6; }
-.second-image { grid-area: 2 / 1 / 3 / 3; }
-.second-article { grid-area: 2 / 3 / 3 / 6; }
-.third-article { grid-area: 3 / 1 / 4 / 4; }
-.third-image { grid-area: 3 / 4 / 4 / 6; }
 
-.grid-container {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: ; */
+    grid-template-areas:
+    'header header header header'
+    'first-a first-a first-i first-i'
+    'first-a first-a first-i first-i'
+    'second-i second-i second-a second-a'
+    'second-i second-i second-a second-a'
+    'third-a third-a third-i third-i'
+    'third-a third-a third-i third-i'
+    'footer footer footer footer';
 }
+header { grid-area: header; }
+.first-article { grid-area: first-a; }
+.first-image { grid-area: first-i; }
+.second-image { grid-area: second-i; }
+.second-article { grid-area: second-a; }
+.third-article { grid-area: third-a; }
+.third-image { grid-area: third-i; }
+footer { grid-area: footer; }
 
 .main {
     margin: 0 0px;
+    height: 150vh;
 }
 
 .historie {
-    height: 45vh;
+    height: 60vh;
 }
 
 .first-article {
-    height: 45vh;
+    height: 60vh
 }
 
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center bottom;
-    height: 45vh;
+    height: 60vh;
 }
 
 .i-dag {
-    height: 45vh;
+    height: 30vh;
 }
 .second-image {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
-    background-position: center bottom;
-    height: 45vh;
+    background-position: center center;
+    height: 30vh;
 }
 
 .second-article {
-    height: 45vh;
+    height: 30vh;
 
 }
 
-.mød-os {
-    height: 45vh;
-
+.mod-os {
+    height: 40vh;
 }
 .third-article {
-    height: 45vh;
+    height: 40vh;
 
 }
 .third-image {
     background-image: url(../images/kokke.jpg);
     background-size: cover;
-    background-position: center bottom;
-    height: 45vh;
+    background-position: center center;
+    height: 40vh;
 }
