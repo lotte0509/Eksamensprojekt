@@ -191,18 +191,15 @@ body{
 
 /*CSS GRID NAMING*/
 .name-brick {grid-area: brick-wall;}
-.name-wed {grid-area: wedding;}
-.name-konf {grid-area: konfirmation;}
+
 
 /*PLACEMENT IN GRID - DESKTOP */
 .grid-container-selskaber{
     display: grid;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
-    'brick-wall brick-wall brick-wall brick-wall'
-    'wedding wedding konfirmation konfirmation'
-    'wedding wedding konfirmation konfirmation'
-    'wedding wedding konfirmation konfirmation'
-    ;
+    'brick-wall brick-wall'
+
 }
 
 
@@ -412,11 +409,6 @@ a:hover, a:active{
 .drop-down:hover .dropdown-content {display: block;}
 
 /* .drop-down:hover .dropbtn {background-color: #3e8e41;} */
-
-
-
-
-
 
 
 .fa-angle-down
