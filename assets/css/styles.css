@@ -137,3 +137,59 @@ nav{
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; */
 }
 
+
+/* Om os page */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header header header'
+    'first-a first-a first-a first-i first-i'
+    'second-i second-i second-a second-a second-a'
+    'third-a third-a third-a third-i third-i'
+    'footer footer footer footer footer';
+}
+header { grid-area: header; }
+.first-article { grid-area: first-a; }
+.first-image { grid-area: first-i; }
+.second-image { grid-area: second-i; }
+.second-article { grid-area: second-a; }
+.third-article { grid-area: third-a; }
+.third-image { grid-area: third-i; }
+footer { grid-area: footer; }
+
+.main {
+    
+}
+
+.first-article {
+    height: 60vh
+}
+
+.first-image {
+    background-image: url(../images/bygning.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 60vh;
+}
+
+.second-image {
+    background-image: url(../images/mette_stefan.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+}
+.second-article {
+    height: 40vh;
+}
+.third-article {
+    height: 40vh;
+
+}
+.third-image {
+    background-image: url(../images/kokke.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+}
