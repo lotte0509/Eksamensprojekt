@@ -374,3 +374,72 @@ footer { grid-area: footer; }
     width: 100vw;
 }
 
+/*SPIS HOS MEST SIDE*/
+/*Grid naming*/
+.name-hosMest {grid-area: hosMest;}
+.name-name-fredag1 {grid-area: fredag1;}
+.name-name-fredag2 {grid-area: fredag2;}
+.name-name-fredag3 {grid-area: fredag3;}
+.name-name-fredag4 {grid-area: fredag4;}
+
+
+.grid-container-hosMest {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-areas: 
+        'hosMest hosMest'
+        'fredag1 fredag2'
+        'fredag3 fredag4';
+}
+
+.name-hosMest {
+    height: 38vh;
+    background-color: aquamarine;
+}
+
+.tekst-hosMest {
+    margin: auto;
+    width: 35vw;
+    height: 26vh;
+    background-color: rgba(25, 28, 39, 0.445);
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.tekst-hosMest p {
+    padding: 4vh 5vw;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.redbox {
+    background-color:#5E0D18;
+    width: 35vw;
+    height: 6vh;
+}
+
+.redbox p {
+    padding: 9px;
+}
+
+.fredag {
+    background-color: #ffffff;
+    height: 37vh;
+    padding: 2vh 2vw;
+}
+
+.fredag h2 {
+    color: #5E0D18;
+    margin-bottom: 0;
+}
+
+.fredag h3 {
+    color: #96192B;
+    font-size: 22px;
+    margin-top: 0;
+}
+.fredag p {
+    line-height: 2;
+    text-align: center;
+}
