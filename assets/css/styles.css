@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #E6DDDC;
+    background-color: #F1F1F1;
 }
 .icon{
     font-size: 2em;
@@ -135,6 +135,63 @@ nav{
     ;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; */
+}
+/*SELSKABER PAGE*/
+.wedding, .konfirmation{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.wedding > h1{
+    color: orangered;
+    padding-left: 22vw;
+    font-size: 6vw;
+    transform: translateY(-460px);
+}
+.img-konf{
+    width: 25vw;
+        /* margin-left: 24%; */
+}
+.img-wedding {
+        width: 25vw;
+        /* margin: 20vh 24%; */
+    
+}
+.menu1-text{
+    padding: 0 20vw;
+    line-height: 8vh;
+    text-align: center;
+}
+.price-box{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 50px;
+    color: white;
+    
+
+}
+.price-box-text{
+    background-color: #96192b;
+}
+.price-box-price{
+    background-color: #5e0d18;
+}
+
+/*CSS GRID NAMING*/
+.name-brick {grid-area: brick-wall;}
+.name-wed {grid-area: wedding;}
+.name-konf {grid-area: konfirmation;}
+
+/*PLACEMENT IN GRID - DESKTOP */
+.grid-container-selskaber{
+    display: grid;
+    grid-template-areas: 
+    'brick-wall brick-wall brick-wall brick-wall'
+    'wedding wedding konfirmation konfirmation'
+    'wedding wedding konfirmation konfirmation'
+    'wedding wedding konfirmation konfirmation'
+    ;
 }
 
 
