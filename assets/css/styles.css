@@ -31,14 +31,14 @@ nav{
     /*transform: translateY(30px);*/
 }
 .hero-img{
-    width: 100vw;
+    width: 90vw;
     
 }
 .gradient-box{
     width: 50%;
     height: 625px;
-    transform: translateY(-630px);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+    transform: translateY(-846px);
+    background-image: linear-gradient(90deg, #191C27, rgba(255, 255, 255, 0));
     z-index: 1;
 }
 .logo{
@@ -259,4 +259,63 @@ footer { grid-area: footer; }
     background-size: cover;
     background-position: center center;
     height: 40vh;
+}
+
+/*MENU SIDE*/
+
+/*Grid naming*/
+.name-banner-menu {grid-area: bannerMenu;}
+.name-forår-menu {grid-area: forårMenu;}
+.name-sommer-menu {grid-area: sommerMenu;}
+.name-efterår-menu {grid-area: efterårMenu;}
+.name-vinter-menu {grid-area: vinterMenu;}
+.menubox {grid-area: menubox;}
+.name-article-menu {grid-area: articleMenu;}
+.name-img-menu {grid-area: imgMenu;}
+.name-price-menu  {grid-area: priceMenu;}
+
+.grid-container-menu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'bannerMenu bannerMenu bannerMenu bannerMenu'
+    'forårMenu sommerMenu efterårMenu vinterMenu'
+    'menubox menubox imgMenu imgMenu'
+    'articleMenu articleMenu imgMenu imgMenu'
+    'articleMenu articleMenu priceMenu priceMenu';
+}
+
+.season-menu img{
+    width: 20vw;
+}
+
+.wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.menuImg img{
+    width: 40vw;
+    margin-left: 2.5vw;
+}
+
+.name-article-menu {
+    margin-right: 2.5vw;
+    background-color: #ffffff;
+    padding: 2vh 2vw;
+    height: 40vh;
+}
+
+.pris {
+    background-color: #ffffff;
+    margin-left: 2.5vw;
+    margin-top: 2vh;
+    height: 10vh;
+}
+
+.menubox {
+    background-color: #5e0d18;
+    height: 8vh;
+    margin-right: 2.5vw;
+    padding: 2vh 2vw;
 }
