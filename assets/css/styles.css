@@ -15,13 +15,13 @@ body{
 }
 
 /*NAV & DROP DOWN*/
-nav{
+/*nav{
     background-color: #5e0d18;
     width: 100%;
     height: 30px;
 }
 .fa-chevron-circle-down{
-    transform: translate(712px, 20px);
+    transform: translate(712px, 20px);*/
 }
 /*HERO*/
 .hero{
@@ -294,6 +294,13 @@ footer { grid-area: footer; }
     margin-right: 5vw;
 }
 
+.menubox {
+    background-color: #5e0d18;
+    height: 8vh;
+    margin-right: 2.5vw;
+    padding: 2vh 2vw;
+}
+
 .menuImg img{
     width: 40vw;
     margin-left: 2.5vw;
@@ -313,9 +320,29 @@ footer { grid-area: footer; }
     height: 10vh;
 }
 
-.menubox {
-    background-color: #5e0d18;
-    height: 8vh;
-    margin-right: 2.5vw;
-    padding: 2vh 2vw;
+/*NAVIGATIONS BAR - SKAL OP I TOPPEN*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image:linear-gradient(#96192B, #5E0D18);
+    height: 9vh;
+}
+
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+}
+
+.navwrapper {
+    position: relative;
+    width: 100vw;
 }
