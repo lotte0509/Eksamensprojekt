@@ -31,13 +31,13 @@ body{
     /*transform: translateY(30px);*/
 }
 .hero-img{
-    width: 90vw;
+    width: 100%;
     
 }
 .gradient-box{
     width: 50%;
     height: 625px;
-    transform: translateY(-846px);
+    transform: translateY(-626px);
     background-image: linear-gradient(90deg, #191C27, rgba(255, 255, 255, 0));
     z-index: 1;
 }
@@ -60,7 +60,7 @@ body{
     display: flex;
     /* flex-flow: row wrap; */
     /* justify-content: space-evenly; */
-    transform: translate(60px, 60px);
+    transform: translate(20px, 60px);
     height: 200px;
     margin: 0 5px 10px 25px;
 }
@@ -90,25 +90,54 @@ body{
     background-color: olivedrab;
 }
 
+/*MENU & VORES HISTORIE*/
 .experience-menu{
     display: flex;
+    width: 630px;
+    height: 100%;
     flex-direction: row;
-    /* transform: translateY(210px); */
+    transform: translate(47px, 80px);
 }
-.img-food{
+.img-container{
+    width: 359px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.img1{
+    background-image: url('../images/forret-img.jpg');
+}
+.img2{
+    background-image: url('../images/hovedret-img.jpg');
+}
+.img3{
+    background-image: url('../images/dessert-img.jpg');
+}
+
+.img-history{
+    background-image: url('../images/kokke.jpg');
+    width: 300px;
+    height: 300px;
+}
+/* .img-food{
     width: 300px;
     height: 150px;
-}
+} */
 .menu-text{
     background-color: white;
     width: 300px;
-    height: 200px;
+    height: 300px;
 }
 
 .our-history{
-    width: 350px;
-    height: 350px;
+    display: flex;
+    width: 630px;
+    height: 100%;
+    flex-direction: row;
+    transform: translate(217px, 80px);
 }
+
 
 /*.our-history > img{
     width: 100px;
@@ -133,7 +162,14 @@ body{
 .name-history {grid-area: our-history;}
 /*PLACEMENT IN GRID - DESKTOP*/
 
+.main-container {
+    width: 1024px;
+    margin: 0px auto;
+
+}
+
 .grid-container{
+    
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
