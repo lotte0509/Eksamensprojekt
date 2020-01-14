@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #E6DDDC;
+    background-color: #F1F1F1;
 }
 footer {
     background-color: #191c27;
@@ -24,62 +24,113 @@ footer > a {
     color: #96192b;
     cursor: pointer;
 }
+.icon a:hover{
+    background-color #191C27;
+}
 
 /*NAV & DROP DOWN*/
-nav{
-    background-color: #5e0d18;
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image:linear-gradient(#96192B, #5E0D18);
+    height: 9vh;
+}
+
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    margin-left: 30px ;
+}
+.navlogo-a{
+    height: 70px;
+    transform: translate(0px, -30px);
+}
+
+}
+.navwrapper {
+    position: relative;
     width: 100%;
-    height: 30px;
 }
-.fa-chevron-circle-down{
-    transform: translate(712px, 20px);
+.nav-logo{
+    width: 300px;
+    /* height: 200px; */
+    margin-top: 0;
+    padding-left: 40px;
+    transform: translate(-3px, 20px);
+    cursor: pointer;
 }
+
+/*LINK STYLING*/
+a:link, a:visited{
+    color: white;
+}
+a:hover, a:active{
+    background-color: #5e0d18;
+}
+  
 /*HERO*/
 .hero{
     width: 100%;
     height: 624px;
-    border: 1px solid orange; /*just to keep track of it*/
-    transform: translateY(30px);
+    /* border: 1px solid orange; just to keep track of it */
+    /*transform: translateY(30px);*/
 }
 .hero-img{
     width: 100%;
     
 }
 .gradient-box{
+    position: relative;
     width: 50%;
     height: 625px;
     transform: translateY(-630px);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(90deg, #191C27, rgba(255, 255, 255, 0));
     z-index: 1;
 }
 .logo{
+    position: relative;
     width: 550px;
     height: 80px;
     padding-left: 50px;
+    margin-top: 50px;
     /* z-index: 2; */
   
 }
 .intro-text{
     color: white;
     padding-left: 50px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     /* z-index: 2; */
+}
+.intro-text > p{
+    font-size: 1vw;
+    margin-top: 30px;
+    padding: 0 0px;
 }
 
 /*MAIN*/
 .cobox-index, .catering-box-index{
     display: flex;
-    /* flex-flow: row wrap; */
-    /* justify-content: space-evenly; */
-    transform: translate(60px, 60px);
+   
+ 
     height: 200px;
-    margin: 0 5px 10px 25px;
+    margin: 40px 30px 10px 30px;
 }
 .co-text-index, .ca-text-index{
     display: inline-block;
     background-color: white;
     width: 50%;
 }
+
 .btn-box{
     background-color: #5e0d18;
     height: 200px;
@@ -91,42 +142,75 @@ nav{
     text-align: center;
     transform: translate(5px,80px);
 }
-.img{
-    width: 100px;
-    height: 100px;
+.img-catering{
+    background-image: url('../images/mette_stefan.jpg');
 }
-.small-box{
-    width: 50%;
-    height: 100px;
-    background-color: olivedrab;
+.img-selskaber{
+    background-image: url('../images/kokke.jpg');
 }
 
+/*MENU & VORES HISTORIE*/
 .experience-menu{
     display: flex;
+    width: 630px;
+    height: 100%;
     flex-direction: row;
-    /* transform: translateY(210px); */
+    transform: translate(47px, 80px);
 }
-.img-food{
+.img-container{
+    width: 359px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.img1{
+    background-image: url('../images/forret-img.jpg');
+}
+.img2{
+    background-image: url('../images/hovedret-img.jpg');
+}
+.img3{
+    background-image: url('../images/dessert-img.jpg');
+}
+
+.img-history{
+    background-image: url('../images/kokke.jpg');
+    width: 300px;
+    height: 300px;
+}
+/* .img-food{
     width: 300px;
     height: 150px;
-}
+} */
 .menu-text{
     background-color: white;
     width: 300px;
-    height: 200px;
+    height: 300px;
 }
 
 .our-history{
-    width: 350px;
-    height: 350px;
-}
-.our-history > img{
-    width: 100px;
-    height: 100px;
+    display: flex;
+    width: 630px;
+    height: 100%;
+    flex-direction: row;
+    transform: translate(217px, 80px);
 }
 
+
+/*.our-history > img{
+    width: 100px;
+    height: 100px;
+}*/
+
+/* .Img-kokke {
+    width: 20vw;
+} */
+
+
+
 /*CSS GRID NAMING*/
-.name-nav {grid-area: nav;}
+.name-nav {grid-area: navbar;}
 .name-hero {grid-area: hero;}
 .name-cobox {grid-area: cobox;}
 .name-cateringbox {grid-area: cateringbox;}
@@ -134,23 +218,84 @@ nav{
 .name-history {grid-area: our-history;}
 /*PLACEMENT IN GRID - DESKTOP*/
 
+.main-container {
+    width: 1024px;
+    margin: 0px auto;
+
+}
+
 .grid-container{
+    
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
-    'nav nav nav nav nav nav'
-    'hero hero hero hero hero hero'     
-    'cobox cobox cobox cateringbox cateringbox cateringbox'
-    'experience-menu experience-menu experience-menu our-history our-history our-history'
+    'navbar navbar navbar navbar'
+    'hero hero hero hero'     
+    'cobox cobox cateringbox cateringbox'
+    'experience-menu experience-menu our-history our-history'
     
     /* 'cobox cobox cobox cateringbox cateringbox cateringbox'; */
     ;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; */
 }
+/*SELSKABER PAGE*/
+.wedding, .konfirmation{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.wedding > h1{
+    color: orangered;
+    padding-left: 22vw;
+    font-size: 6vw;
+    transform: translateY(-460px);
+}
+.img-konf{
+    width: 25vw;
+        /* margin-left: 24%; */
+}
+.img-wedding {
+        width: 25vw;
+        /* margin: 20vh 24%; */
+    
+}
+.menu1-text, .eksempel-text{
+    padding: 0 20vw;
+    line-height: 8vh;
+    text-align: center;
+}
+.price-box{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 50px;
+    color: white;
+    
+
+}
+.price-box-text{
+    background-color: #96192b;
+}
+.price-box-price{
+    background-color: #5e0d18;
+}
+
+/*CSS GRID NAMING*/
+.name-brick {grid-area: brick-wall;}
+
+
+/*PLACEMENT IN GRID - DESKTOP */
+.grid-container-selskaber{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'brick-wall brick-wall'
+
+}
 
 
 /* Om os page */
-
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -203,4 +348,169 @@ footer { grid-area: footer; }
     background-size: cover;
     background-position: center center;
     height: 40vh;
+}
+
+/*MENU SIDE*/
+
+/*Grid naming*/
+.name-banner-menu {grid-area: bannerMenu;}
+.name-forår-menu {grid-area: forårMenu;}
+.name-sommer-menu {grid-area: sommerMenu;}
+.name-efterår-menu {grid-area: efterårMenu;}
+.name-vinter-menu {grid-area: vinterMenu;}
+.menubox {grid-area: menubox;}
+.name-article-menu {grid-area: articleMenu;}
+.name-img-menu {grid-area: imgMenu;}
+.name-price-menu  {grid-area: priceMenu;}
+
+.grid-container-menu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'bannerMenu bannerMenu bannerMenu bannerMenu'
+    'forårMenu sommerMenu efterårMenu vinterMenu'
+    'menubox menubox imgMenu imgMenu'
+    'articleMenu articleMenu imgMenu imgMenu'
+    'articleMenu articleMenu priceMenu priceMenu';
+}
+/* .logoNav{
+    height: 130px;
+    width: 130px;
+    margin-left: 3vw;
+    margin-top: 1.2vh;
+    position: absolute; 
+    background-color: yellow; } /*just to keep track of it*/
+
+
+.season-menu img{
+    width: 20vw;
+}
+
+.wrapper {
+    margin: 5vh 10vw;
+}
+
+.menubox {
+    background-color: #5e0d18;
+    height: 8vh;
+    margin-right: 2.5vw;
+    padding: 2vh 2vw;
+}
+
+.menuImg img{
+    width: 40vw;
+    margin-left: 2.5vw;
+}
+
+.name-article-menu {
+    margin-right: 2.5vw;
+    background-color: #ffffff;
+    padding: 2vh 2vw;
+    height: 40vh;
+}
+
+.pris {
+    background-color: #ffffff;
+    margin-left: 2.5vw;
+    margin-top: 2vh;
+    height: 10vh;
+}
+
+/*FORÅR*/
+.seasonImg {
+    width: 30vw;
+}
+
+/*Grid naming*/
+.name-forret    {grid-area: forret;}
+.name-forret-img {grid-area: forretImg;}
+.name-hovedret {grid-area: hovedret;}
+.name-hovedret-img {grid-area: hovedretImg;}
+.name-dessert {grid-area: dessert;}
+.name-dessert-img {grid-area: dessertImg;}
+
+
+.grid-container-season {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: 
+        'forret forret forretImg'
+        'hovedretImg hovedret hovedret'
+        'dessert dessert dessertImg';
+}
+
+.menu-tekst {
+    padding: 2vh 2vw;
+    background-color: #ffffff;
+}
+
+
+/*SPIS HOS MEST SIDE*/
+/*Grid naming*/
+.name-hosMest {grid-area: hosMest;}
+.name-name-fredag1 {grid-area: fredag1;}
+.name-name-fredag2 {grid-area: fredag2;}
+.name-name-fredag3 {grid-area: fredag3;}
+.name-name-fredag4 {grid-area: fredag4;}
+
+
+.grid-container-hosMest {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-areas: 
+        'hosMest hosMest'
+        'fredag1 fredag2'
+        'fredag3 fredag4';
+}
+
+.name-hosMest {
+    height: 38vh;
+    background-color: aquamarine;
+}
+
+.tekst-hosMest {
+    margin: auto;
+    width: 35vw;
+    height: 26vh;
+    background-color: rgba(25, 28, 39, 0.445);
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.tekst-hosMest p {
+    padding: 4vh 5vw;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.redbox {
+    background-color:#5E0D18;
+    width: 35vw;
+    height: 6vh;
+}
+
+.redbox p {
+    padding: 9px;
+}
+
+.fredag {
+    background-color: #ffffff;
+    height: 37vh;
+    padding: 2vh 2vw;
+}
+
+.fredag h2 {
+    color: #5E0D18;
+    margin-bottom: 0;
+}
+
+.fredag h3 {
+    color: #96192B;
+    font-size: 22px;
+    margin-top: 0;
+}
+.fredag p {
+    line-height: 2;
+    text-align: center;
 }
