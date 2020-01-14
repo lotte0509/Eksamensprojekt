@@ -384,6 +384,7 @@ footer > .imgs {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     grid-template-areas:
     'first-a first-a first-a first-i first-i'
     'second-i second-i second-a second-a second-a'
@@ -403,14 +404,13 @@ footer > .imgs {
 .first-article {
     background-color: #fff;
     padding: 10px 15px;
-    margin: 0 10px 10px 0;
 }
 
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center center;
-    height: 96.5%;
+    height: 100%;
     width: 100%;
 
 }
@@ -419,18 +419,16 @@ footer > .imgs {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
     background-position: center center;
-    height: 97%;
+    height: 100%;
     width: 100%;
 }
 .second-article {
     background-color: #fff;
     padding: 10px 15px;
-    margin: 0 0 10px 10px;
 }
 .third-article {
     background-color: #fff;
     padding: 10px 15px 80px 15px;
-    margin-right: 10px;
 }
 
 .third-image {
@@ -530,10 +528,7 @@ footer > .imgs {
     height: 10vh;
 }
 
-/*FORÅR*/
-.seasonImg {
-    width: 30vw;
-}
+/*ÅRSTIDS MENUER*/
 
 /*Grid naming*/
 
@@ -546,13 +541,23 @@ footer > .imgs {
 
 .grid-container-season {
     display: grid;
-    grid-template-columns: 45% 10% 45%;
-    grid-template-areas: 'forret forret forretImg' 'hovedretImg hovedret hovedret' 'dessert dessert dessertImg';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    '. forret forret forret forretImg forretImg .'
+    '. hovedretImg hovedretImg hovedret hovedret hovedret .'
+    '. dessert dessert dessert dessertImg dessertImg .';
 }
 
 .menu-tekst {
-    padding: 2vh 2vw;
+    padding: 10px 15px;
     background-color: #ffffff;
+    text-align: center;
+}
+
+.seasonImg {
+    width: 100%;
+    /* height: 100%; */
 }
 
 /*SPIS HOS MEST SIDE*/
