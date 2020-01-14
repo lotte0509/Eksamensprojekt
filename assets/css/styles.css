@@ -389,15 +389,6 @@ footer > .imgs {
 .third-article { grid-area: third-a; }
 .third-image { grid-area: third-i; }
 
-.main {
-    height: 130vh;
-}
-
-.first-article {
-    background-color: #fff;
-    padding: 10px 15px;
-}
-
 .first-image {
     grid-area: first-i;
 }
@@ -422,10 +413,13 @@ footer {
     grid-area: footer;
 }
 
-.main {}
-
-.first-article {}
-
+.main {
+    height: 130vh;
+}
+.first-article {
+    background-color: #fff;
+    padding: 10px 15px;
+}
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
