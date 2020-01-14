@@ -12,6 +12,10 @@ h1 {
     color: #96192b;
     font-size: 20px;
 }
+h2.red{
+    color: #96192b;
+    font-size: 20px;
+}
 p {
     line-height: 1.5em;
 }
@@ -684,3 +688,59 @@ footer {
     text-align: center;
 }
 
+/* KONTAKT SIDE */
+
+.grid-container-kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-gap: 10px; */
+    grid-template-areas:
+    'adresse adresse kontakt kontakt tider tider'
+    'intro intro kort kort kort kort'
+    'park park park overnatning overnatning overnatning';
+}
+.adresse { grid-area: adresse; }
+.kontakt { grid-area: kontakt; }
+.åbningstider { grid-area: tider; }
+.intro { grid-area: intro; }
+.kort { grid-area: kort; }
+.parkering { grid-area: park; }
+.overnatning { grid-area: overnatning; }
+
+.adresse, .kontakt, .åbningstider {
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.intro {
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0 0 50px;
+    margin: 20px 20px 20px 0;
+}
+.intro > p {
+    width: 280px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+h2.padding {
+    padding:
+}
+.kort {
+    background-color: #fff;
+    margin: 20px 0 20px 20px;
+}
+.kort > img {
+    width: 100%;
+}
+
+.parkering, .overnatning {
+    background-color: #fff;
+}
+.parkering > img {
+    width: 50%;
+}
+
+.overnatning > img {
+    width: 50%;
+}
