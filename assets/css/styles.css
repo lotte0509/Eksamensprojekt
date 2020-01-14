@@ -616,19 +616,15 @@ footer {
 .name-hosMest {
     grid-area: hosMest;
 }
-
 .name-name-fredag1 {
     grid-area: fredag1;
 }
-
 .name-name-fredag2 {
     grid-area: fredag2;
 }
-
 .name-name-fredag3 {
     grid-area: fredag3;
 }
-
 .name-name-fredag4 {
     grid-area: fredag4;
 }
@@ -637,7 +633,10 @@ footer {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
-    grid-template-areas: 'hosMest hosMest' 'fredag1 fredag2' 'fredag3 fredag4';
+    grid-template-areas: 
+        'hosMest hosMest' 
+        'fredag1 fredag2' 
+        'fredag3 fredag4';
 }
 
 .name-hosMest {
