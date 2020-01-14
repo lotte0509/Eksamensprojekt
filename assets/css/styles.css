@@ -111,8 +111,15 @@ footer {
 .links {
     margin-top: 28px;
 }
+.stars {
+    display: flex;
+    margin: 20px 0 0 170px;
+}
+.starImg {
+    height: 60px;
+}
 footer > .imgs {
-    margin: 20px 0 0 770px;
+    margin: 20px 0 0 250px;
 }
 .imgs > a:hover {
     background-color: #191c27;
