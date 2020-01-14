@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
-h2.red {
+h1 {
     color: #96192b;
     font-size: 20px;
 }
@@ -46,7 +46,7 @@ p {
     text-align: center;
     padding: 23px 16px;
     text-decoration: none;
-    margin-left: 30px;
+    margin: 0 15px;
 }
 
 .navlogo-a {
@@ -74,7 +74,7 @@ a:link, a:visited {
     color: white;
 }
 
-.navbar a:hover{
+.navbar li:hover{
     background-color: #5e0d18;
 }
 .icon:hover, .icon:active{
@@ -223,7 +223,7 @@ footer > .imgs {
     flex-direction: row;
     /* margin-top: 30px;
     margin-left: 30px; */
-    transform: translate(30px, 80px);
+    transform: translate(30px, 20px);
 }
 
 
@@ -232,6 +232,7 @@ footer > .imgs {
     /* width: 300px; */
     height: 300px;
     padding: 0 15px;
+    text-align: center;
 }
 
 .img-container {
@@ -257,21 +258,25 @@ footer > .imgs {
 .icon-on-img {
     transform: translate(98px, 10px);
 }
+.icon-history{
+    transform: translate(-3px, -20px);
+}
 
 .img-history {
     background-image: url('../images/Landing_kokke.jpg');
     width: 300px;
-    height: 300px;
+    height: 230px;
 }
 
 .gradient-box2 {
-    height: 80px;
-    width: 140px;
-    transform: translate(80px, -140px);
-    background-color: #191c279e;
+    height: 70px;
+    width: 300px;
+    transform: translate(0px, -20px);
+    background-color: #5e0d18;
     color: white;
     text-align: center;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .our-history {
@@ -279,34 +284,17 @@ footer > .imgs {
     /* width: 630px; */
     height: 100%;
     flex-direction: row;
-    transform: translate(217px, 80px);
+    transform: translate(183px, 20px);
 }
 
 /*CSS GRID NAMING*/
 
-.name-nav {
-    grid-area: navbar;
-}
-
-.name-hero {
-    grid-area: hero;
-}
-
-.name-cobox {
-    grid-area: cobox;
-}
-
-.name-cateringbox {
-    grid-area: cateringbox;
-}
-
-.name-menu {
-    grid-area: experience-menu;
-}
-
-.name-history {
-    grid-area: our-history;
-}
+.name-nav {grid-area: navbar;}
+.name-hero {grid-area: hero;}
+.name-cobox {grid-area: cobox;}
+.name-cateringbox {grid-area: cateringbox;}
+.name-menu {grid-area: experience-menu;}
+.name-history {grid-area: our-history;}
 
 /*PLACEMENT IN GRID - DESKTOP*/
 
@@ -318,7 +306,11 @@ footer > .imgs {
 .grid-container{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'navbar navbar navbar navbar' 'hero hero hero hero' 'cobox cobox cateringbox cateringbox' 'experience-menu experience-menu our-history our-history'
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'hero hero hero hero'
+    'cobox cobox cateringbox cateringbox'
+    'experience-menu experience-menu our-history our-history'
     /* 'cobox cobox cobox cateringbox cateringbox cateringbox'; */
     ;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
@@ -407,6 +399,34 @@ footer > .imgs {
 }
 
 .first-image {
+    grid-area: first-i;
+}
+
+.second-image {
+    grid-area: second-i;
+}
+
+.second-article {
+    grid-area: second-a;
+}
+
+.third-article {
+    grid-area: third-a;
+}
+
+.third-image {
+    grid-area: third-i;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main {}
+
+.first-article {}
+
+.first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center center;
@@ -481,8 +501,12 @@ footer > .imgs {
 .grid-container-menu{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
-    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    grid-template-areas: 
+    'bannerMenu bannerMenu bannerMenu bannerMenu' 
+    'forårMenu sommerMenu efterårMenu vinterMenu' 
+    'menubox menubox imgMenu imgMenu' 
+    'articleMenu articleMenu imgMenu imgMenu' 
+    'articleMenu articleMenu priceMenu priceMenu';
     
 }
 
@@ -532,12 +556,29 @@ footer > .imgs {
 
 /*Grid naming*/
 
-.name-forret { grid-area: forret; }
-.name-forret-img { grid-area: forretImg; }
-.name-hovedret { grid-area: hovedret; }
-.name-hovedret-img { grid-area: hovedretImg; }
-.name-dessert { grid-area: dessert; }
-.name-dessert-img { grid-area: dessertImg; }
+.name-forret {
+    grid-area: forret;
+}
+
+.name-forret-img {
+    grid-area: forretImg;
+}
+
+.name-hovedret {
+    grid-area: hovedret;
+}
+
+.name-hovedret-img {
+    grid-area: hovedretImg;
+}
+
+.name-dessert {
+    grid-area: dessert;
+}
+
+.name-dessert-img {
+    grid-area: dessertImg;
+}
 
 .grid-container-season {
     display: grid;
@@ -567,19 +608,15 @@ footer > .imgs {
 .name-hosMest {
     grid-area: hosMest;
 }
-
 .name-name-fredag1 {
     grid-area: fredag1;
 }
-
 .name-name-fredag2 {
     grid-area: fredag2;
 }
-
 .name-name-fredag3 {
     grid-area: fredag3;
 }
-
 .name-name-fredag4 {
     grid-area: fredag4;
 }
@@ -588,7 +625,10 @@ footer > .imgs {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
-    grid-template-areas: 'hosMest hosMest' 'fredag1 fredag2' 'fredag3 fredag4';
+    grid-template-areas: 
+        'hosMest hosMest' 
+        'fredag1 fredag2' 
+        'fredag3 fredag4';
 }
 
 .name-hosMest {
