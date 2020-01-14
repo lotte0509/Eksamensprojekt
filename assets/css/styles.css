@@ -496,17 +496,19 @@ footer {
 
 .menubox {
     background-color: #5e0d18;
+    color: white;
     height: 8vh;
     margin-right: 2.5vw;
     padding: 2vh 2vw;
 }
 
 .menu-icon{
-    transform: translate(70px, -40px);
+    transform: translate(120px, -50px);
 }
 .img-container-menu{
     width: 20vw;
     height: 20vw;
+    background-size: contain;
 }
 .menu-img1{
     background-image: url('../images/Foraar.jpg');
