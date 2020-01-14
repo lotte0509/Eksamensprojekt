@@ -8,17 +8,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
-footer {
-    background-color: #191c27;
-    color: #fff;
-}
-footer > i {
-    font-size: 30px;
-    height: 15vh;
-}
-footer > a {
-    color: #FFF;
-}
+
 .icon{
     font-size: 2em;
     color: #96192b;
@@ -76,6 +66,41 @@ a:link, a:visited{
 a:hover, a:active{
     background-color: #5e0d18;
 }
+
+
+footer {
+    background-color: #191c27;
+    color: #fff;
+    display: flex;
+    padding-bottom: 20px;
+}
+.social > i {
+    font-size: 40px;
+    margin: 5px;
+}
+.social {
+    margin: 25px 40px 0 40px;
+}
+.links > a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+.links {
+    margin-top: 28px;
+}
+footer > .imgs {
+    margin: 20px 0 0 770px;
+}
+.madmedmest {
+    width: 250px;
+    margin-right: 20px;
+}
+.gazelle {
+    width: 150px;
+}
+
   
 /*HERO*/
 .hero{
@@ -320,43 +345,43 @@ footer { grid-area: footer; }
 }
 
 .first-article {
-    height: 60vh
 }
 
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center bottom;
-    height: 60vh;
+    height: 100%;
+    width: 60%;
 }
 
 .second-image {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 100%;
+    width: 60%;
 }
 .second-article {
-    height: 40vh;
 }
 .third-article {
-    height: 40vh;
 
 }
 .third-image {
     background-image: url(../images/kokke.jpg);
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 100%;
+    width: 60%;
 }
 
 /*MENU SIDE*/
 
 /*Grid naming*/
 .name-banner-menu {grid-area: bannerMenu;}
-.name-forår-menu {grid-area: forårMenu;}
+.name-forÃƒÂ¥r-menu {grid-area: forÃƒÂ¥rMenu;}
 .name-sommer-menu {grid-area: sommerMenu;}
-.name-efterår-menu {grid-area: efterårMenu;}
+.name-efterÃƒÂ¥r-menu {grid-area: efterÃƒÂ¥rMenu;}
 .name-vinter-menu {grid-area: vinterMenu;}
 .menubox {grid-area: menubox;}
 .name-article-menu {grid-area: articleMenu;}
@@ -368,7 +393,7 @@ footer { grid-area: footer; }
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
     'bannerMenu bannerMenu bannerMenu bannerMenu'
-    'forårMenu sommerMenu efterårMenu vinterMenu'
+    'forÃƒÂ¥rMenu sommerMenu efterÃƒÂ¥rMenu vinterMenu'
     'menubox menubox imgMenu imgMenu'
     'articleMenu articleMenu imgMenu imgMenu'
     'articleMenu articleMenu priceMenu priceMenu';
@@ -416,7 +441,7 @@ footer { grid-area: footer; }
     height: 10vh;
 }
 
-/*FORÅR*/
+/*FORÃƒâ€¦R*/
 .seasonImg {
     width: 30vw;
 }
