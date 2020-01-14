@@ -12,6 +12,10 @@ h1 {
     color: #96192b;
     font-size: 20px;
 }
+h2.red{
+    color: #96192b;
+    font-size: 20px;
+}
 p {
     line-height: 1.5em;
 }
@@ -64,7 +68,7 @@ p {
     /* height: 200px; */
     margin-top: 0;
     padding-left: 40px;
-    transform: translate(-3px, 20px);
+    transform: translate(-3px, 0px);
     cursor: pointer;
 }
 
@@ -296,7 +300,6 @@ footer > .imgs {
 
 /*CSS GRID NAMING*/
 
-.name-nav {grid-area: navbar;}
 .name-hero {grid-area: hero;}
 .name-cobox {grid-area: cobox;}
 .name-cateringbox {grid-area: cateringbox;}
@@ -314,7 +317,6 @@ footer > .imgs {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
-    'navbar navbar navbar navbar'
     'hero hero hero hero'
     'cobox cobox cateringbox cateringbox'
     'experience-menu experience-menu our-history our-history'
@@ -668,9 +670,15 @@ footer {
 }
 
 .name-hosMest {
-    height: 38vh;
-    background-color: aquamarine;
+    height: 40vh;
+    background-image: url('../images/spis_hos_mest_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+/* .Mest-img{
+    background-image: url('./assets/images/spis_hos_mest_hero.jpg');
+    background-size: contain;
+} */
 
 .tekst-hosMest {
     margin: auto;
@@ -691,10 +699,16 @@ footer {
     background-color: #5E0D18;
     width: 35vw;
     height: 6vh;
+    cursor: pointer;
+    transform: translateY(-40px);
+}
 }
 
 .redbox p {
     padding: 9px;
+}
+.Mest-icon{
+    z-index: 999;
 }
 
 .fredag {
@@ -719,3 +733,59 @@ footer {
     text-align: center;
 }
 
+/* KONTAKT SIDE */
+
+.grid-container-kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-gap: 10px; */
+    grid-template-areas:
+    'adresse adresse kontakt kontakt tider tider'
+    'intro intro kort kort kort kort'
+    'park park park overnatning overnatning overnatning';
+}
+.adresse { grid-area: adresse; }
+.kontakt { grid-area: kontakt; }
+.åbningstider { grid-area: tider; }
+.intro { grid-area: intro; }
+.kort { grid-area: kort; }
+.parkering { grid-area: park; }
+.overnatning { grid-area: overnatning; }
+
+.adresse, .kontakt, .åbningstider {
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.intro {
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0 0 50px;
+    margin: 20px 20px 20px 0;
+}
+.intro > p {
+    width: 280px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+h2.padding {
+    padding:
+}
+.kort {
+    background-color: #fff;
+    margin: 20px 0 20px 20px;
+}
+.kort > img {
+    width: 100%;
+}
+
+.parkering, .overnatning {
+    background-color: #fff;
+}
+.parkering > img {
+    width: 50%;
+}
+
+.overnatning > img {
+    width: 50%;
+}
