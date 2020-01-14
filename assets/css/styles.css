@@ -200,13 +200,19 @@ footer > .imgs {
     transform: translate(1px, 80px);
 }
 
+.img-selskaber {
+    height: 200px;
+    width: 418px;
+    background-image: url('../images/Landing_1.jpg');
+}
 .img-catering {
-    background-image: url('../images/mette_stefan.jpg');
+    height: 200px;
+    width: 758px;
+    background-image: url('../images/Landing_2.jpg');
+    /* background-size: contain; */
 }
 
-.img-selskaber {
-    background-image: url('../images/kokke.jpg');
-}
+
 
 /*MENU & VORES HISTORIE*/
 
@@ -237,15 +243,15 @@ footer > .imgs {
 }
 
 .img1 {
-    background-image: url('../images/forret-img.jpg');
+    background-image: url('../images/Landing_3.jpg');
 }
 
 .img2 {
-    background-image: url('../images/hovedret-img.jpg');
+    background-image: url('../images/Landing_4.jpg');
 }
 
 .img3 {
-    background-image: url('../images/dessert-img.jpg');
+    background-image: url('../images/Landing_5.jpg');
 }
 
 .icon-on-img {
@@ -253,7 +259,7 @@ footer > .imgs {
 }
 
 .img-history {
-    background-image: url('../images/kokke.jpg');
+    background-image: url('../images/Landing_kokke.jpg');
     width: 300px;
     height: 300px;
 }
