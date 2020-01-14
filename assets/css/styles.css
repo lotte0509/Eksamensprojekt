@@ -14,9 +14,9 @@ body{
     color: #96192b;
     cursor: pointer;
 }
-.icon a:hover{
+/* .icon a:hover{
     background-color #191C27;
-}
+} */
 
 /*NAV & DROP DOWN*/
 .navbar ul {
@@ -204,10 +204,7 @@ footer > .imgs {
     width: 300px;
     height: 300px;
 }
-/* .img-food{
-    width: 300px;
-    height: 150px;
-} */
+
 .menu-text{
     background-color: white;
     width: 300px;
@@ -221,17 +218,6 @@ footer > .imgs {
     flex-direction: row;
     transform: translate(217px, 80px);
 }
-
-
-/*.our-history > img{
-    width: 100px;
-    height: 100px;
-}*/
-
-/* .Img-kokke {
-    width: 20vw;
-} */
-
 
 
 /*CSS GRID NAMING*/
