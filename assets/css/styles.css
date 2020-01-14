@@ -309,7 +309,7 @@ footer > .imgs {
     margin: 0px auto;
 }
 
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 'navbar navbar navbar navbar' 'hero hero hero hero' 'cobox cobox cateringbox cateringbox' 'experience-menu experience-menu our-history our-history'
@@ -321,63 +321,56 @@ footer > .imgs {
 
 /*SELSKABER PAGE*/
 
-.wedding, .konfirmation {
-    display: flex;
-    flex-direction: column;
-    float: left;
-}
-
-.wedding>h1 {
-    color: orangered;
-    padding-left: 22vw;
-    font-size: 6vw;
-    transform: translateY(-460px);
-}
-
-.img-konf {
-    width: 25vw;
-    /* margin-left: 24%; */
-}
-
-.img-wedding {
-    width: 25vw;
-    /* margin: 20vh 24%; */
-}
-
-.menu1-text, .eksempel-text {
-    padding: 0 20vw;
-    line-height: 8vh;
-    text-align: center;
-}
-
-.price-box {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    height: 50px;
-    color: white;
-}
-
-.price-box-text {
-    background-color: #96192b;
-}
-
-.price-box-price {
-    background-color: #5e0d18;
-}
-
-/*CSS GRID NAMING*/
-
-.name-brick {
-    grid-area: brick-wall;
-}
-
-/*PLACEMENT IN GRID - DESKTOP */
+.name-text-selskaber {grid-area: tekst;}
+.name-menu-selskaber {grid-area: menubox;}
+.name-img-selskaber {grid-area: billede;}
 
 .grid-container-selskaber {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 'brick-wall brick-wall'
+    grid-gap: 2vh;
+    grid-template-areas:
+    'tekst tekst'
+    'menubox billede'
+}
+
+.name-text-selskaber {
+    background-color: white;
+    height: 40vh;
+    padding: 1vh 2vw;
+    line-height: 1.8;
+}
+
+.name-text-selskaber h1 {
+    color: #96192B;
+}
+
+.name-menu-selskaber {
+    background-color: #96192B;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.name-menu-selskaber h3 {
+    color: white;
+}
+
+.flexbox-selskab {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selskab-menu {
+    width: 50%;
+    height: 10vh; 
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.grey {
+    background-color: #F1F1F1;
 }
 
 /* OM OS PAGE */
@@ -683,3 +676,4 @@ footer {
     line-height: 2;
     text-align: center;
 }
+
