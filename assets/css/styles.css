@@ -371,6 +371,40 @@ footer > .imgs {
     background-color: #F1F1F1;
 }
 
+/*SELSKABER UNDERSIDER*/
+.bryllup-menu {
+    padding: 5%;
+    text-align: center;
+}
+
+.name-menu-bryllup {grid-area: menuBryllup;}
+.name-pris1-bryllup {grid-area: pris1;}
+.name-pris2-bryllup {grid-area: pris2;}
+
+.grid-container-bryllup {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    'menuBryllup menuBryllup'
+    'pris1 pris2';
+    background-color: #ffffff;
+    width: 40vw;
+    margin: auto;
+}
+
+.name-pris1-bryllup {
+    background-color: #96192b;
+}
+
+.name-pris2-bryllup {
+    background-color: #5e0d18;
+    font-weight: bold;
+}
+
+.pris-bryllup {
+    text-align: center;
+    color: #ffffff;
+}
 /* OM OS PAGE */
 
 .grid {
