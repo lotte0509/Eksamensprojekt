@@ -8,22 +8,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
-
-footer {
-    background-color: #191c27;
-    color: #fff;
+h1 {
+    color: #96192b;
+    font-size: 20px;
 }
-
-footer>i {
-    font-size: 30px;
-    height: 15vh;
+p {
+    line-height: 1.5em;
 }
-
-footer>a {
-    color: #FFF;
-}
-
-.icon {
+.icon{
     font-size: 2em;
     color: #96192b;
     cursor: pointer;
@@ -62,8 +54,6 @@ footer>a {
     transform: translate(0px, -30px);
 }
 
-}
-
 .navwrapper {
     position: relative;
     width: 100%;
@@ -89,6 +79,50 @@ a:link, a:visited {
 }
 .icon:hover, .icon:active{
     color: rgba(25, 28, 39, 0.932);
+}
+
+/* footer */
+footer {
+    background-color: #191c27;
+    color: #fff;
+    display: flex;
+    padding-bottom: 20px;
+}
+.social > a {
+    font-size: 40px;
+    margin: 5px;
+}
+.social > a:hover {
+    background-color: #191c27;
+}
+.social {
+    margin: 25px 40px 0 40px;
+}
+.links > a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+.links > a:hover {
+    background-color: #191c27;
+    text-decoration: underline;
+}
+.links {
+    margin-top: 28px;
+}
+footer > .imgs {
+    margin: 20px 0 0 770px;
+}
+.imgs > a:hover {
+    background-color: #191c27;
+}
+.madmedmest {
+    width: 250px;
+    margin-right: 20px;
+}
+.gazelle {
+    width: 150px;
 }
 
 /*HERO*/
@@ -351,15 +385,26 @@ a:link, a:visited {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'header header header header header' 'first-a first-a first-a first-i first-i' 'second-i second-i second-a second-a second-a' 'third-a third-a third-a third-i third-i' 'footer footer footer footer footer';
+    grid-template-areas:
+    'first-a first-a first-a first-i first-i'
+    'second-i second-i second-a second-a second-a'
+    'third-a third-a third-a third-i third-i';
 }
+.first-article { grid-area: first-a; }
+.first-image { grid-area: first-i; }
+.second-image { grid-area: second-i; }
+.second-article { grid-area: second-a; }
+.third-article { grid-area: third-a; }
+.third-image { grid-area: third-i; }
 
-header {
-    grid-area: header;
+.main {
+    height: 130vh;
 }
 
 .first-article {
-    grid-area: first-a;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 0 10px 10px 0;
 }
 
 .first-image {
@@ -393,24 +438,28 @@ footer {
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
-    background-position: center bottom;
-    height: 100%;
-    width: 60%;
+    background-position: center center;
+    height: 96.5%;
+    width: 100%;
+
 }
 
 .second-image {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100%;
-    width: 60%;
+    height: 97%;
+    width: 100%;
 }
-
-.second-article {}
-
+.second-article {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 0 0 10px 10px;
+}
 .third-article {
-    <<<<<<< HEAD height: 40vh;
-    =======>>>>>>>56ac3e7b1c932b88324bfc597b9cb94e5c8c0e35
+    background-color: #fff;
+    padding: 10px 15px 80px 15px;
+    margin-right: 10px;
 }
 
 .third-image {
@@ -418,7 +467,7 @@ footer {
     background-size: cover;
     background-position: center center;
     height: 100%;
-    width: 60%;
+    width: 100%;
 }
 
 /*MENU SIDE*/
