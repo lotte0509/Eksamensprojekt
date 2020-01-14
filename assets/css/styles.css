@@ -8,6 +8,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
+footer {
+    background-color: #191c27;
+    color: #fff;
+}
+footer > i {
+    font-size: 30px;
+    height: 15vh;
+}
+footer > a {
+    color: #FFF;
+}
 .icon{
     font-size: 2em;
     color: #96192b;
@@ -291,7 +302,7 @@ header { grid-area: header; }
 footer { grid-area: footer; }
 
 .main {
-    
+
 }
 
 .first-article {
