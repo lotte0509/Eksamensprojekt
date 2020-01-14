@@ -13,6 +13,9 @@ body{
     color: #96192b;
     cursor: pointer;
 }
+.icon a:hover{
+    background-color #191C27;
+}
 
 /*NAV & DROP DOWN*/
 .navbar ul {
@@ -83,6 +86,7 @@ a:hover, a:active{
     z-index: 1;
 }
 .logo{
+    position: relative;
     width: 550px;
     height: 80px;
     padding-left: 50px;
@@ -105,17 +109,17 @@ a:hover, a:active{
 /*MAIN*/
 .cobox-index, .catering-box-index{
     display: flex;
-    /* flex-flow: row wrap; */
-    /* justify-content: space-evenly; */
-    transform: translate(20px, 60px);
+   
+ 
     height: 200px;
-    margin: 0 5px 10px 25px;
+    margin: 40px 30px 10px 30px;
 }
 .co-text-index, .ca-text-index{
     display: inline-block;
     background-color: white;
     width: 50%;
 }
+
 .btn-box{
     background-color: #5e0d18;
     height: 200px;
@@ -127,14 +131,11 @@ a:hover, a:active{
     text-align: center;
     transform: translate(5px,80px);
 }
-.img{
-    width: 100px;
-    height: 100px;
+.img-catering{
+    background-image: url('../images/mette_stefan.jpg');
 }
-.small-box{
-    width: 50%;
-    height: 100px;
-    background-color: olivedrab;
+.img-selskaber{
+    background-image: url('../images/kokke.jpg');
 }
 
 /*MENU & VORES HISTORIE*/
@@ -191,13 +192,10 @@ a:hover, a:active{
     height: 100px;
 }*/
 
-.Img-kokke {
+/* .Img-kokke {
     width: 20vw;
-}
+} */
 
-.catering-box-index {
-    width: 40vw;
-}
 
 
 /*CSS GRID NAMING*/
