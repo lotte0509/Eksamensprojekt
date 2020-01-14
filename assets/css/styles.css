@@ -419,7 +419,8 @@ footer {
 
 /*Grid naming*/
 
-    grid-area: bannerMenu;
+    grid-area:{
+          bannerMenu;
 }
 
 .name-forår-menu {
@@ -453,12 +454,12 @@ footer {
 .name-price-menu {
     grid-area: priceMenu;
 }
-
+.grid-container-menu{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    <<<<<<< HEAD grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
-    =======grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forÃƒÂ¥rMenu sommerMenu efterÃƒÂ¥rMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
-    >>>>>>>56ac3e7b1c932b88324bfc597b9cb94e5c8c0e35
+    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    
 }
 
 /* .logoNav{
