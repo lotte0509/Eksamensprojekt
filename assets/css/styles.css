@@ -318,7 +318,7 @@ footer > .imgs {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
-    'navbar navbar navbar navbar'
+    /* 'navbar navbar navbar navbar' */
     'hero hero hero hero'
     'cobox cobox cateringbox cateringbox'
     'experience-menu experience-menu our-history our-history'
