@@ -353,11 +353,14 @@ footer > .imgs {
 .name-menu-selskaber {
     background-color: #96192B;
     text-align: center;
-    border-bottom: 2px solid white;
 }
 
 .name-menu-selskaber h3 {
     color: white;
+}
+
+.name-img-selskaber img {
+    width: 100%;
 }
 
 .flexbox-selskab {
@@ -367,8 +370,13 @@ footer > .imgs {
 
 .selskab-menu {
     width: 50%;
-    height: 10vh; 
+    height: 15vh; 
 }
+
+.selskab-menu a {
+    color: #000000;
+}
+
 
 .white {
     background-color: #ffffff;
