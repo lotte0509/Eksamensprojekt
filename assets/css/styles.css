@@ -223,7 +223,7 @@ footer > .imgs {
     flex-direction: row;
     /* margin-top: 30px;
     margin-left: 30px; */
-    transform: translate(30px, 80px);
+    transform: translate(30px, 20px);
 }
 
 
@@ -232,6 +232,7 @@ footer > .imgs {
     /* width: 300px; */
     height: 300px;
     padding: 0 15px;
+    text-align: center;
 }
 
 .img-container {
@@ -257,21 +258,25 @@ footer > .imgs {
 .icon-on-img {
     transform: translate(98px, 10px);
 }
+.icon-history{
+    transform: translate(-3px, -20px);
+}
 
 .img-history {
     background-image: url('../images/Landing_kokke.jpg');
     width: 300px;
-    height: 300px;
+    height: 230px;
 }
 
 .gradient-box2 {
-    height: 80px;
-    width: 140px;
-    transform: translate(80px, -140px);
-    background-color: #191c279e;
+    height: 70px;
+    width: 300px;
+    transform: translate(0px, -20px);
+    background-color: #5e0d18;
     color: white;
     text-align: center;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .our-history {
@@ -279,7 +284,7 @@ footer > .imgs {
     /* width: 630px; */
     height: 100%;
     flex-direction: row;
-    transform: translate(217px, 80px);
+    transform: translate(183px, 20px);
 }
 
 /*CSS GRID NAMING*/
