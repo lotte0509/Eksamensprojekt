@@ -8,11 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
-h1 {
-    color: #96192b;
-    font-size: 20px;
-}
-h2.red{
+h1, h2.red {
     color: #96192b;
     font-size: 20px;
 }
@@ -738,23 +734,33 @@ footer {
 .grid-container-kontakt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
     grid-template-areas:
     'adresse adresse kontakt kontakt tider tider'
-    'intro intro kort kort kort kort'
-    'park park park overnatning overnatning overnatning';
+    'intro intro kort kort kort kort';
 }
 .adresse { grid-area: adresse; }
 .kontakt { grid-area: kontakt; }
 .åbningstider { grid-area: tider; }
 .intro { grid-area: intro; }
 .kort { grid-area: kort; }
+
+.grid-container-kort {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'park kort2 overnatning kort3';
+    background-color: #96192b;
+    padding: 5vh 10vw;
+
+}
 .parkering { grid-area: park; }
+.kort2 { grid-area: kort2; }
 .overnatning { grid-area: overnatning; }
+.kort3 { grid-area: kort3; }
 
 .adresse, .kontakt, .åbningstider {
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 10px 60px;
 }
 
 .intro {
@@ -768,8 +774,11 @@ footer {
     font-size: 20px;
     line-height: 1.5em;
 }
+h2.center {
+    text-align: center;
+}
 h2.padding {
-    padding:
+    padding-left: 15px;
 }
 .kort {
     background-color: #fff;
@@ -782,10 +791,9 @@ h2.padding {
 .parkering, .overnatning {
     background-color: #fff;
 }
-.parkering > img {
-    width: 50%;
+.parkering > p, .overnatning > p {
+    padding: 0 10px 0 10px;
 }
-
-.overnatning > img {
-    width: 50%;
+.kort2 {
+    margin-right: 20px;
 }
