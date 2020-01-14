@@ -153,14 +153,14 @@ a:hover, a:active {
 .btn-box {
     background-color: #5e0d18;
     height: 200px;
-    width: 50px;
+    width: 75px;
 }
 
 .fa-chevron-circle-right {
     font-size: 2em;
     color: #96192b;
-    text-align: center;
-    transform: translate(5px, 80px);
+    /* text-align: center; */
+    transform: translate(1px, 80px);
 }
 
 .img-catering {
@@ -178,7 +178,10 @@ a:hover, a:active {
     width: 630px;
     /* height: 100%; */
     flex-direction: row;
-    transform: translate(30px, 80px);
+    margin-top: 30px;
+    margin-left: 30px;
+    /* transform: translate(30px, 80px); */
+}
 }
 
 .menu-text {
