@@ -84,8 +84,11 @@ a:link, a:visited {
     color: white;
 }
 
-a:hover, a:active {
+.navbar a:hover{
     background-color: #5e0d18;
+}
+.icon:hover, .icon:active{
+    color: rgba(25, 28, 39, 0.932);
 }
 
 /*HERO*/
@@ -178,11 +181,11 @@ a:hover, a:active {
     width: 630px;
     /* height: 100%; */
     flex-direction: row;
-    margin-top: 30px;
-    margin-left: 30px;
-    /* transform: translate(30px, 80px); */
+    /* margin-top: 30px;
+    margin-left: 30px; */
+    transform: translate(30px, 80px);
 }
-}
+
 
 .menu-text {
     background-color: white;
