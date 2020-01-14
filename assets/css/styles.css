@@ -207,17 +207,18 @@ a:hover, a:active {
 .img3 {
     background-image: url('../images/dessert-img.jpg');
 }
-.icon-on-img{
+
+.icon-on-img {
     transform: translate(98px, 10px);
 }
-
 
 .img-history {
     background-image: url('../images/kokke.jpg');
     width: 300px;
     height: 300px;
 }
-.gradient-box2{
+
+.gradient-box2 {
     height: 80px;
     width: 140px;
     transform: translate(80px, -140px);
@@ -339,7 +340,7 @@ a:hover, a:active {
     grid-template-areas: 'brick-wall brick-wall'
 }
 
-/* Om os page */
+/* OM OS PAGE */
 
 .grid {
     display: grid;
@@ -381,44 +382,43 @@ footer {
 
 .main {}
 
-.first-article {
-    height: 60vh
-}
+.first-article {}
 
 .first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center bottom;
-    height: 60vh;
+    height: 100%;
+    width: 60%;
 }
 
 .second-image {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 100%;
+    width: 60%;
 }
 
-.second-article {
-    height: 40vh;
-}
+.second-article {}
 
 .third-article {
-    height: 40vh;
+    <<<<<<< HEAD height: 40vh;
+    =======>>>>>>>56ac3e7b1c932b88324bfc597b9cb94e5c8c0e35
 }
 
 .third-image {
     background-image: url(../images/kokke.jpg);
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 100%;
+    width: 60%;
 }
 
 /*MENU SIDE*/
 
 /*Grid naming*/
 
-.name-banner-menu {
     grid-area: bannerMenu;
 }
 
@@ -454,10 +454,11 @@ footer {
     grid-area: priceMenu;
 }
 
-.grid-container-menu {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    <<<<<<< HEAD grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    =======grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forÃƒÂ¥rMenu sommerMenu efterÃƒÂ¥rMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    >>>>>>>56ac3e7b1c932b88324bfc597b9cb94e5c8c0e35
 }
 
 /* .logoNav{
@@ -504,7 +505,6 @@ footer {
 
 /*FORÅR*/
 
-.seasonImg {
     width: 30vw;
 }
 
