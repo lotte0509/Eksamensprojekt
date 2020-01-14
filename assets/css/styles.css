@@ -46,7 +46,7 @@ p {
     text-align: center;
     padding: 23px 16px;
     text-decoration: none;
-    margin-left: 30px;
+    margin: 0 15px;
 }
 
 .navlogo-a {
@@ -74,7 +74,7 @@ a:link, a:visited {
     color: white;
 }
 
-.navbar a:hover{
+.navbar li:hover{
     background-color: #5e0d18;
 }
 .icon:hover, .icon:active{
@@ -603,19 +603,15 @@ footer {
 .name-hosMest {
     grid-area: hosMest;
 }
-
 .name-name-fredag1 {
     grid-area: fredag1;
 }
-
 .name-name-fredag2 {
     grid-area: fredag2;
 }
-
 .name-name-fredag3 {
     grid-area: fredag3;
 }
-
 .name-name-fredag4 {
     grid-area: fredag4;
 }
@@ -624,7 +620,10 @@ footer {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
-    grid-template-areas: 'hosMest hosMest' 'fredag1 fredag2' 'fredag3 fredag4';
+    grid-template-areas: 
+        'hosMest hosMest' 
+        'fredag1 fredag2' 
+        'fredag3 fredag4';
 }
 
 .name-hosMest {
