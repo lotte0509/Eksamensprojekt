@@ -549,6 +549,9 @@ footer {
 .menu-icon{
     transform: translate(120px, -50px);
 }
+.menu-icon1{
+    transform: translate(310px, -22px);
+}
 .img-container-menu{
     width: 20vw;
     height: 20vw;
@@ -568,8 +571,8 @@ footer {
 }
 .menu-img5{
     background-image: url('../images/Menu_1.jpg');
-    width: 40vw;
-    height: 34vw;
+    width: 25vw;
+    height: 20vw;
     margin-top: 20px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -585,9 +588,34 @@ footer {
 
 .pris {
     background-color: #ffffff;
-    height: 12vh;
-    transform: translateY(-20px);
+    height: 22vh;
+    width: 25vw;
+    transform: translateY(-5px);
     padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.pris > h2{
+    color: #96192B;
+    margin: 10px;
+}
+.pris > p{
+    padding-left: 20px;
+}
+.pris2{
+    width: 25vw;
+    height: 3vh;
+    transform: translate(-9px, -42px);
+}
+.pris2 > p{
+    width: 25vw;
+    height: 6vh;
+    color: white;
+    transform: translate(-1px, 35px);
+    background-color: #666666;
+    padding: 5px 15px;
+    font-weight: bold;
+
 }
 
 /*ÅRSTIDS MENUER*/
