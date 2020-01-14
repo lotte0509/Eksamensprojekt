@@ -357,11 +357,14 @@ footer > .imgs {
 .name-menu-selskaber {
     background-color: #96192B;
     text-align: center;
-    border-bottom: 2px solid white;
 }
 
 .name-menu-selskaber h3 {
     color: white;
+}
+
+.name-img-selskaber img {
+    width: 100%;
 }
 
 .flexbox-selskab {
@@ -371,8 +374,13 @@ footer > .imgs {
 
 .selskab-menu {
     width: 50%;
-    height: 10vh; 
+    height: 15vh; 
 }
+
+.selskab-menu a {
+    color: #000000;
+}
+
 
 .white {
     background-color: #ffffff;
@@ -382,6 +390,40 @@ footer > .imgs {
     background-color: #F1F1F1;
 }
 
+/*SELSKABER UNDERSIDER*/
+.bryllup-menu {
+    padding: 5%;
+    text-align: center;
+}
+
+.name-menu-bryllup {grid-area: menuBryllup;}
+.name-pris1-bryllup {grid-area: pris1;}
+.name-pris2-bryllup {grid-area: pris2;}
+
+.grid-container-bryllup {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    'menuBryllup menuBryllup'
+    'pris1 pris2';
+    background-color: #ffffff;
+    width: 40vw;
+    margin: auto;
+}
+
+.name-pris1-bryllup {
+    background-color: #96192b;
+}
+
+.name-pris2-bryllup {
+    background-color: #5e0d18;
+    font-weight: bold;
+}
+
+.pris-bryllup {
+    text-align: center;
+    color: #ffffff;
+}
 /* OM OS PAGE */
 
 .grid {
@@ -468,41 +510,16 @@ footer {
 
 /*Grid naming*/
 
-    grid-area:{
-          bannerMenu;
-}
-
-.name-forår-menu {
-    grid-area: forårMenu;
-}
-
-.name-sommer-menu {
-    grid-area: sommerMenu;
-}
-
-.name-efterår-menu {
-    grid-area: efterårMenu;
-}
-
-.name-vinter-menu {
-    grid-area: vinterMenu;
-}
-
-.menubox {
-    grid-area: menubox;
-}
-
-.name-article-menu {
-    grid-area: articleMenu;
-}
-
-.name-img-menu {
-    grid-area: imgMenu;
-}
-
-.name-price-menu {
-    grid-area: priceMenu;
-}
+  .name-banner-menu {grid-area: bannerMenu;}
+.name-forår-menu {grid-area: forårMenu;}
+.name-sommer-menu {grid-area: sommerMenu;}
+.name-efterår-menu {grid-area: efterårMenu;}
+.name-vinter-menu {grid-area: vinterMenu;}
+.menubox {grid-area: menubox;}
+.name-article-menu {grid-area: articleMenu;}
+.name-img-menu {grid-area: imgMenu;}
+.name-price-menu {grid-area: priceMenu;}
+  
 .grid-container-menu{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -512,20 +529,12 @@ footer {
     'menubox menubox imgMenu imgMenu' 
     'articleMenu articleMenu imgMenu imgMenu' 
     'articleMenu articleMenu priceMenu priceMenu';
-    
 }
 
-/* .logoNav{
-    height: 130px;
-    width: 130px;
-    margin-left: 3vw;
-    margin-top: 1.2vh;
-    position: absolute; 
-    background-color: yellow; } /*just to keep track of it*/
 
-.season-menu img {
+/* .season-menu img {
     width: 20vw;
-}
+} */
 
 .wrapper {
     margin: 5vh 10vw;
@@ -533,15 +542,41 @@ footer {
 
 .menubox {
     background-color: #5e0d18;
+    color: white;
     height: 8vh;
     margin-right: 2.5vw;
     padding: 2vh 2vw;
 }
 
-.menuImg img {
-    width: 40vw;
-    margin-left: 2.5vw;
+.menu-icon{
+    transform: translate(120px, -50px);
 }
+.img-container-menu{
+    width: 20vw;
+    height: 20vw;
+    background-size: contain;
+}
+.menu-img1{
+    background-image: url('../images/Foraar.jpg');
+}
+.menu-img2{
+    background-image: url('../images/Sommer.jpg');
+}
+.menu-img3{
+    background-image: url('../images/Efteraar.jpg');
+}
+.menu-img4{
+    background-image: url('../images/Vinter.jpg');
+}
+.menu-img5{
+    background-image: url('../images/Menu_1.jpg');
+    width: 40vw;
+    height: 34vw;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .name-article-menu {
     margin-right: 2.5vw;
@@ -552,9 +587,9 @@ footer {
 
 .pris {
     background-color: #ffffff;
-    margin-left: 2.5vw;
-    margin-top: 2vh;
-    height: 10vh;
+    height: 12vh;
+    transform: translateY(-20px);
+    padding-left: 10px;
 }
 
 /*ÅRSTIDS MENUER*/
@@ -637,9 +672,15 @@ footer {
 }
 
 .name-hosMest {
-    height: 38vh;
-    background-color: aquamarine;
+    height: 40vh;
+    background-image: url('../images/spis_hos_mest_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+/* .Mest-img{
+    background-image: url('./assets/images/spis_hos_mest_hero.jpg');
+    background-size: contain;
+} */
 
 .tekst-hosMest {
     margin: auto;
@@ -660,10 +701,16 @@ footer {
     background-color: #5E0D18;
     width: 35vw;
     height: 6vh;
+    cursor: pointer;
+    transform: translateY(-40px);
+}
 }
 
 .redbox p {
     padding: 9px;
+}
+.Mest-icon{
+    z-index: 999;
 }
 
 .fredag {
