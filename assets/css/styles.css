@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F1F1;
 }
-h2.red {
+h1 {
     color: #96192b;
     font-size: 20px;
 }
@@ -401,6 +401,34 @@ footer > .imgs {
 }
 
 .first-image {
+    grid-area: first-i;
+}
+
+.second-image {
+    grid-area: second-i;
+}
+
+.second-article {
+    grid-area: second-a;
+}
+
+.third-article {
+    grid-area: third-a;
+}
+
+.third-image {
+    grid-area: third-i;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main {}
+
+.first-article {}
+
+.first-image {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center center;
@@ -477,8 +505,12 @@ footer > .imgs {
 .grid-container-menu{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
-    grid-template-areas: 'bannerMenu bannerMenu bannerMenu bannerMenu' 'forårMenu sommerMenu efterårMenu vinterMenu' 'menubox menubox imgMenu imgMenu' 'articleMenu articleMenu imgMenu imgMenu' 'articleMenu articleMenu priceMenu priceMenu';
+    grid-template-areas: 
+    'bannerMenu bannerMenu bannerMenu bannerMenu' 
+    'forårMenu sommerMenu efterårMenu vinterMenu' 
+    'menubox menubox imgMenu imgMenu' 
+    'articleMenu articleMenu imgMenu imgMenu' 
+    'articleMenu articleMenu priceMenu priceMenu';
     
 }
 
@@ -525,18 +557,35 @@ footer > .imgs {
 }
 
 /*FORÅR*/
-.seasonImg {
+
     width: 30vw;
 }
 
 /*Grid naming*/
 
-.name-forret { grid-area: forret; }
-.name-forret-img { grid-area: forretImg; }
-.name-hovedret { grid-area: hovedret; }
-.name-hovedret-img { grid-area: hovedretImg; }
-.name-dessert { grid-area: dessert; }
-.name-dessert-img { grid-area: dessertImg; }
+.name-forret {
+    grid-area: forret;
+}
+
+.name-forret-img {
+    grid-area: forretImg;
+}
+
+.name-hovedret {
+    grid-area: hovedret;
+}
+
+.name-hovedret-img {
+    grid-area: hovedretImg;
+}
+
+.name-dessert {
+    grid-area: dessert;
+}
+
+.name-dessert-img {
+    grid-area: dessertImg;
+}
 
 .grid-container-season {
     display: grid;
