@@ -49,11 +49,6 @@ p {
     margin: 0 15px;
 }
 
-.navlogo-a {
-    height: 70px;
-    transform: translate(0px, -30px);
-}
-
 .navwrapper {
     position: relative;
     width: 100%;
@@ -376,7 +371,6 @@ footer > .imgs {
 .flexbox-selskab {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
 }
 
 .selskab-menu {
