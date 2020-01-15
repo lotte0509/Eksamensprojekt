@@ -752,6 +752,7 @@ footer {
 
 .grid-container-hosMest {
     display: grid;
+    height: 127vh;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
     grid-template-areas: 
@@ -766,10 +767,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* .Mest-img{
-    background-image: url('./assets/images/spis_hos_mest_hero.jpg');
-    background-size: contain;
-} */
 
 .tekst-hosMest {
     margin: auto;
