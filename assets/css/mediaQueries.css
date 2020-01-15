@@ -231,7 +231,7 @@
         width: 70vw;
     }
 
-/*OM OS SIDEN*/
+    /*OM OS SIDEN*/
     .grid {
         display: grid;
         grid-template-columns: 1fr ;
@@ -258,4 +258,16 @@
         padding: 10px 15px;
     }
 
+    /*LANDING PAGE*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'hero'
+        'cobox'
+        'cateringbox'
+        'experience-menu'
+        'our-history'
+        ;
+    }
 }
