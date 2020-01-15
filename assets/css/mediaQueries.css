@@ -134,8 +134,17 @@
             margin: 0;
         }
          
-       
-           
+    /*SPIS HOS MEST*/
+    .grid-container-hosMest{
+        display: grid;
+        /* grid-template-columns: ; */
+        grid-template-areas: 
+        'hosMest'
+        'fredag1'
+        'fredag2'
+        'fredag3'
+        'fredag4';
+    }
         
 
 }
