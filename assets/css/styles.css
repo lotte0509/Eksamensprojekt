@@ -733,9 +733,12 @@ footer {
 }
 
 .tekst-hosMest p {
-    padding: 4vh 5vw;
+    padding-top: 2vh;
+    padding-bottom: 0vh;
+    padding-right: 4vw;
     text-align: center;
-    line-height: 1.5;
+    line-height: 31px;
+    padding-left: 4vw;
 }
 
 .redbox {
@@ -743,7 +746,10 @@ footer {
     width: 35vw;
     height: 6vh;
     cursor: pointer;
-    transform: translateY(-40px);
+    transform: translateY(-6px);
+}
+
+
 }
 }
 
