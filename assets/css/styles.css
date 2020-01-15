@@ -328,15 +328,20 @@ footer > .imgs {
 .name-menu-selskaber {grid-area: menubox;}
 .name-img-selskaber {grid-area: billede;}
 .name-selskab-hero {grid-area: hero;}
+.lokale-banner { grid-area: banner; }
+.lokale-info { grid-area: info; }
+.lokale-img { grid-area: img; }
 
 .grid-container-selskaber {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2vh;
     grid-template-areas:
-    'hero hero'
-    'tekst tekst'
-    'menubox billede'
+    'hero hero hero hero hero hero'
+    'tekst tekst tekst tekst tekst tekst'
+    'menubox menubox menubox billede billede billede'
+    'banner banner banner banner banner banner'
+    'info info info info img img';
 }
 
 .name-selskab-hero {
@@ -390,6 +395,39 @@ footer > .imgs {
 .grey {
     background-color: #F1F1F1;
 }
+
+.lokale-banner {
+    background-image: url(../images/selskab_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    display: flex;
+}
+.banner-tekst {
+    background-color: rgba(10, 10, 10, 0.7);
+    color: #fff;
+    text-align: center;
+    margin: 60px 420px;
+    padding: 25px 30px;
+    font-size: 25px;
+    align-self: center;
+}
+.lokale-img {
+    width: 100%;
+}
+.lokale-info {
+    background-color: #fff;
+    padding: 10px 55px;
+}
+h2.long {
+    text-align: center;
+}
+.lokale-tekst {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
 
 /*SELSKABER UNDERSIDER*/
 .bryllup-menu {
@@ -660,8 +698,14 @@ footer {
     margin: 0;
     padding: 1vh;
 }
+.season-name {
+    text-align: center;
+}
+.months{
+    transform: translateY(-38px);
+}
+/*Grid naming*/
 
-.name-tilbage {grid-area: tilbage;}
 .name-forret {grid-area: forret;}
 .name-forret-img {grid-area: forretImg;}
 .name-hovedret {grid-area: hovedret;}
@@ -757,10 +801,6 @@ footer {
     transform: translateY(-6px);
 }
 
-
-}
-}
-
 .redbox p {
     padding: 9px;
 }
@@ -790,7 +830,7 @@ footer {
     text-align: center;
 }
 
-/* KONTAKT SIDE */
+/* INFORMATIONSSIDE */
 
 .grid-container-kontakt {
     display: grid;
