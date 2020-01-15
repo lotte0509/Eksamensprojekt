@@ -87,5 +87,21 @@
         width: 100vw;
         transform: translateY(-5px);
     }
+
+    /*ÅRSTIDS MENUER*/
+    
+    .grid-container-season{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'forret'
+        'forretImg'
+        'hovedret'
+        'hovedretImg'
+        'dessert'
+        'dessertImg'
+        'tilbage';
+    }
+    
     
 }
