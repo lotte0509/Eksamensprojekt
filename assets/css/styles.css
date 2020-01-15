@@ -364,6 +364,7 @@ footer > .imgs {
 .flexbox-selskab {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid black;
 }
 
 .selskab-menu {
@@ -374,7 +375,8 @@ footer > .imgs {
 .selskab-menu a {
     color: #000000;
 }
-
+.selskaber-icon{
+}
 
 .white {
     background-color: #ffffff;
