@@ -327,14 +327,20 @@ footer > .imgs {
 .name-text-selskaber {grid-area: tekst;}
 .name-menu-selskaber {grid-area: menubox;}
 .name-img-selskaber {grid-area: billede;}
+.name-selskab-hero {grid-area: hero;}
 
 .grid-container-selskaber {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 2vh;
     grid-template-areas:
+    'hero hero'
     'tekst tekst'
     'menubox billede'
+}
+
+.name-selskab-hero {
+    width: 100%;
 }
 
 .name-text-selskaber {
@@ -351,6 +357,7 @@ footer > .imgs {
 .name-menu-selskaber {
     background-color: #96192B;
     text-align: center;
+    box-shadow: 0px 0px 10px 0px #888888;
 }
 
 .name-menu-selskaber h3 {
@@ -374,8 +381,6 @@ footer > .imgs {
 
 .selskab-menu a {
     color: #000000;
-}
-.selskaber-icon{
 }
 
 .white {
@@ -527,10 +532,6 @@ footer {
     'articleMenu articleMenu priceMenu priceMenu';
 }
 
-
-/* .season-menu img {
-    width: 20vw;
-} */
 
 .wrapper {
     margin: 5vh 10vw;
