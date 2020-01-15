@@ -112,7 +112,7 @@
         'dessertImg'
         'tilbage';
     }
-    .name-banner-menu > h1{
+    .name-banner-menu-seasons > h1{
         font-size: 7vw;
     }
     .months{
@@ -145,9 +145,13 @@
         'fredag3'
         'fredag4';
     }
+    .name-banner-menu > h1{
+        font-size: 7vw;
+        padding-left: 12px;
+    }
         /*footeren er weird i Spis hos Mest*/
        .hosMest{
-           transform: translateY(642px);
+           transform: translateY(575px);
        } 
 
        .tekst-hosMest{
