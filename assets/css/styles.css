@@ -532,7 +532,9 @@ footer {
     'articleMenu articleMenu priceMenu priceMenu';
 }
 
-
+.name-banner-menu > h1{
+    font-size: 3vw;
+}
 .wrapper {
     margin: 5vh 10vw;
 }
@@ -544,12 +546,21 @@ footer {
     margin-right: 2.5vw;
     padding: 2vh 2vw;
 }
-
+.season-container{
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+}
 .menu-icon{
-    transform: translate(120px, -50px);
+    transform: translate(130px, -140px);
 }
 .menu-icon1{
     transform: translate(310px, -22px);
+}
+.season-menu > h3{
+    transform: translate(100px, -190px);
+    color: white;
+    font-size: 2vw;
 }
 .img-container-menu{
     width: 20vw;
