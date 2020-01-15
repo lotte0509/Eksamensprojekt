@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px) { 
+@media (max-width: 420px) { 
     footer {
         display: block;
         padding-bottom: none;
@@ -93,7 +93,7 @@
     .grid-container-season{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: {
+        grid-template-areas: 
         'forret'
         'forretImg'
         'hovedret'
@@ -101,8 +101,10 @@
         'dessert'
         'dessertImg'
         'tilbage';
-    }
 }
+    /* .grid-item{
+        width: 100%;
+    } */
     
     
 }
