@@ -17,6 +17,9 @@
         margin: 2vh 15vw;
     }
 
+    .links > a {
+        margin-right: 10px;
+    }
     .stars {
         display: block;
         margin: 0 30vw;
@@ -111,5 +114,26 @@
     }
 }
     
+    .months{
+        transform: translateY(-14px);
+    }  
     
+    /*SELSKABS UNDERSIDER*/
+    .grid-container-bryllup{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'menuBryllup menuBryllup'
+        'pris1 pris2'
+        'others others';
+        width: 100%;
+    }
+        .pris-bryllup > p {
+            margin: 0;
+        }
+         
+       
+           
+        
+
 }
