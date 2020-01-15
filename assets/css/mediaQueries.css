@@ -196,9 +196,10 @@
         'others others';
         width: 100%;
     }
-        .pris-bryllup > p {
-            margin: 0;
-        }
+    
+    .pris-bryllup > p {
+        margin: 0;
+    }
          
     /*SPIS HOS MEST*/
     .grid-container-hosMest{
@@ -212,19 +213,42 @@
         'fredag3'
         'fredag4';
     }
-        /*footeren er weird i Spis hos Mest*/
-       .hosMest{
-           transform: translateY(642px);
-       } 
+    /*footeren er weird i Spis hos Mest*/
+    .hosMest{
+        transform: translateY(642px);
+    } 
 
-       .tekst-hosMest{
+    .tekst-hosMest{
+    width: 70vw;
+    height: 31vh;
+    margin: 1vh auto;
+    }
+
+    .redbox{
         width: 70vw;
-        height: 31vh;
-        margin: 1vh auto;
-       }
+    }
 
-       .redbox{
-           width: 70vw;
-       }
+/*OM OS SIDEN*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+        grid-template-areas:
+        'first-a'
+        'first-i'
+        'second-a'
+        'second-i'
+        'third-a'
+        'third-i';
+    }
 
+    .first-image {
+        height: 50vh;
+    }
+    .second-image {
+        height: 50vh;
+    }
+    .third-image {
+        height: 50vh;
+    }
 }

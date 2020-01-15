@@ -511,13 +511,6 @@ h2.long {
     grid-area: third-i;
 }
 
-footer {
-    grid-area: footer;
-}
-
-.main {
-    height: 130vh;
-}
 .first-article {
     background-color: #fff;
     padding: 10px 15px;
@@ -526,7 +519,6 @@ footer {
     background-image: url(../images/bygning.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100%;
     width: 100%;
 
 }
@@ -535,7 +527,6 @@ footer {
     background-image: url(../images/mette_stefan.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100%;
     width: 100%;
 }
 .second-article {
@@ -551,7 +542,6 @@ footer {
     background-image: url(../images/kokke.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100%;
     width: 100%;
 }
 
