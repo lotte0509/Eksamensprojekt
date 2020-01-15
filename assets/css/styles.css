@@ -706,6 +706,7 @@ footer {
 }
 /*Grid naming*/
 
+.name-tilbage {grid-area: tilbage;}
 .name-forret {grid-area: forret;}
 .name-forret-img {grid-area: forretImg;}
 .name-hovedret {grid-area: hovedret;}
@@ -718,9 +719,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
-    'tilbage forret forret forret forretImg forretImg .'
+    '. forret forret forret forretImg forretImg .'
     '. hovedretImg hovedretImg hovedret hovedret hovedret .'
-    '. dessert dessert dessert dessertImg dessertImg .';
+    '. dessert dessert dessert dessertImg dessertImg .'
+    '. tilbage . . . . .';
 }
 
 .menu-tekst {
