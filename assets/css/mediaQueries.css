@@ -93,7 +93,7 @@
     .grid-container-season{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas: {
         'forret'
         'forretImg'
         'hovedret'
@@ -102,6 +102,7 @@
         'dessertImg'
         'tilbage';
     }
+}
     
     
 }
