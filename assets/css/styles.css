@@ -395,19 +395,21 @@ footer > .imgs {
 .bryllup-menu {
     padding: 5%;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .name-menu-bryllup {grid-area: menuBryllup;}
 .name-pris1-bryllup {grid-area: pris1;}
 .name-pris2-bryllup {grid-area: pris2;}
+.name-others {grid-area: others;}
 
 .grid-container-bryllup {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-areas: 
     'menuBryllup menuBryllup'
-    'pris1 pris2';
-    background-color: #ffffff;
+    'pris1 pris2'
+    'others others';
     width: 40vw;
     margin: auto;
 }
@@ -419,6 +421,17 @@ footer > .imgs {
 .name-pris2-bryllup {
     background-color: #5e0d18;
     font-weight: bold;
+}
+
+
+.name-others {
+    padding: 0vh 2vw;
+    background-color: #ffffff;
+    margin-top: 2vh;
+}
+
+.name-others a{
+    color: #191c27;
 }
 
 .pris-bryllup {
