@@ -1,9 +1,9 @@
-@media screen and (max-width: 420px) { 
+@media screen and (max-width: 426px) { 
     footer {
         display: block;
     }
     .social > a {
-        font-size: 50px;
+        font-size: 12vw;
         margin: 5px;
     }
     .social {
@@ -14,7 +14,7 @@
 
     .links {
         float: right;
-        margin: 2vh 15vw;
+        margin: 2vh 12vw;
     }
 
     .links > a {
