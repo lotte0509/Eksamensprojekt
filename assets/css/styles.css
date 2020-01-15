@@ -659,11 +659,12 @@ footer {
 .pris > p{
     padding-left: 20px;
 }
+/*
 .pris2{
     width: 25vw;
     height: 3vh;
     transform: translate(-9px, -42px);
-}
+}*/
 .pris2 > p{
     width: 25vw;
     height: 6vh;

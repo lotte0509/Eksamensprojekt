@@ -1,19 +1,25 @@
 @media screen and (max-width: 420px) { 
     footer {
         display: block;
-        padding-bottom: none;
     }
     .social > a {
-        font-size: 20px;
+        font-size: 50px;
         margin: 5px;
     }
     .social {
+        display: inline-block;
         margin: 0;
+        padding: 1vh 8vw;
     }
 
     .links {
-        margin-top: 0;
+        display: flex;
+        float: right;
+        margin: 2vh 15vw;
     }
+    .links > a {
+        margin-right: 10px;
+
     .stars {
         display: block;
         margin: 0;
@@ -86,8 +92,13 @@
     .pris {
         width: 100vw;
         transform: translateY(-5px);
+        padding: 0;
+        margin: 0;
     }
 
+    .pris > p{
+        padding: 2vh 2vw;
+    }
     /*ÅRSTIDS MENUER*/
     
     .grid-container-season{
