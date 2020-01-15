@@ -426,6 +426,11 @@ footer > .imgs {
     text-align: center;
     color: #ffffff;
 }
+
+.selskaber-hero {
+    width: 100%;
+}
+
 /* OM OS PAGE */
 
 .grid {
