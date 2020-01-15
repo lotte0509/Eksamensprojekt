@@ -254,4 +254,8 @@
     .third-image {
         height: 50vh;
     }
+    .third-article {
+        padding: 10px 15px;
+    }
+
 }
