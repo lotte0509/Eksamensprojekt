@@ -647,32 +647,20 @@ footer {
 }
 
 /*ÅRSTIDS MENUER*/
-
+.season-name {
+    text-align: center;
+}
+.months{
+    transform: translateY(-38px);
+}
 /*Grid naming*/
 
-.name-forret {
-    grid-area: forret;
-}
-
-.name-forret-img {
-    grid-area: forretImg;
-}
-
-.name-hovedret {
-    grid-area: hovedret;
-}
-
-.name-hovedret-img {
-    grid-area: hovedretImg;
-}
-
-.name-dessert {
-    grid-area: dessert;
-}
-
-.name-dessert-img {
-    grid-area: dessertImg;
-}
+.name-forret {grid-area: forret;}
+.name-forret-img {grid-area: forretImg;}
+.name-hovedret {grid-area: hovedret;}
+.name-hovedret-img {grid-area: hovedretImg;}
+.name-dessert {grid-area: dessert;}
+.name-dessert-img {grid-area: dessertImg;}
 
 .grid-container-season {
     display: grid;
@@ -760,10 +748,6 @@ footer {
     height: 6vh;
     cursor: pointer;
     transform: translateY(-6px);
-}
-
-
-}
 }
 
 .redbox p {
