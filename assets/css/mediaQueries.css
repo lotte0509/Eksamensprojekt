@@ -43,39 +43,61 @@
         margin: 0;
     }   
     
+    .name-banner-menu > h1{
+        font-size: 6vw;
+        padding: 0 2vw;    
+    }
+
     .grid-container-menu{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-            'bannerMenu bannerMenu' 
-            'season-container season-container' 
-            'menubox menubox'
-            'imgMenu imgMenu' 
-            'articleMenu articleMenu'
-            'priceMenu priceMenu';
+            'bannerMenu' 
+            'season-container' 
+            'menubox'
+            'imgMenu' 
+            'articleMenu'
+            'priceMenu';
     }
     
     .menubox {
-        margin-right: 2.5vw;
         padding: 2vh 2vw;
+        margin-right: 0;
     }
 
+
+
+    /*grid naming for sæson container*/
+    .name-forår-menu {grid-area: forår;}
+    .name-sommer-menu {grid-area: sommer;}
+    .name-efterår-menu {grid-area: efterår;}
+    .name-vinter-menu {grid-area: vinter;}
+
     .season-container{
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'forår sommer'
+        'efterår vinter';
+        height: 100%;
     }
 
     .menu-icon{
-        transform: translate(33px, -65px)
+        transform: translate(20vw, -19vh);
+    }
+
+    .season-menu {
+        height: 50vw;
     }
 
     .season-menu > h3{
-        transform: translate(37px, -59px);
-        font-size: 16px;
+        transform: translate(15vw, -16vh);
+        font-size: 6vw;
     }
-
+    
     .img-container-menu{
-        width: 50vw;
-        height: 50vw;
+        width: 49vw;
+        height: 49vw;
     }
 
     .menu-img5{
@@ -85,7 +107,7 @@
     .name-article-menu {
         margin:0;
         padding: 2vh 2vw;
-        height: 50vh;
+        height: 32vh;
     }
 
     .pris {
@@ -112,7 +134,7 @@
         'dessertImg'
         'tilbage';
     }
-}
+
     
     .months{
         transform: translateY(-14px);
