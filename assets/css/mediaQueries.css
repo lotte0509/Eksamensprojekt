@@ -55,17 +55,16 @@
         padding: 2vh 2vw;
     }
 
-    .season-container{
-        display: block;
-    }
-
     .menu-icon{
-        transform: translate(33px, -65px)
+        transform: translate(65px, -96px);
     }
 
+    .season-container {
+        height: 50vh;
+    }
     .season-menu > h3{
-        transform: translate(37px, -59px);
-        font-size: 16px;
+        transform: translate(55px, -75px);
+        font-size: 20px;
     }
 
     .img-container-menu{
@@ -86,6 +85,19 @@
     .pris {
         width: 100vw;
         transform: translateY(-5px);
+        height: 22vh;
+        padding: 1vw;
+        margin: 0;
     }
-    
+
+
+    .menubox {
+        margin: 0;
+    }
+
+    .name-article-menu {
+        margin: 0;
+        padding: 2vh 2vw;
+        height: 40vh;
+    }
 }
