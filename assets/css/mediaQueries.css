@@ -19,7 +19,7 @@
     }
     .links > a {
         margin-right: 10px;
-
+    }
     .stars {
         display: block;
         margin: 0;
@@ -130,7 +130,9 @@
         'others others';
         width: 100%;
     }
-        
+        .pris-bryllup > p {
+            margin: 0;
+        }
          
        
            
