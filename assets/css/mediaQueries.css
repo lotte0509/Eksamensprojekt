@@ -142,6 +142,50 @@
         transform: translateY(-14px);
     }  
     
+    /*SELSKABS SIDE*/
+    .grid-container-selskaber {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'hero'
+        'tekst'
+        'billede'
+        'menubox'
+        'banner'
+        'info'
+        'img';
+    }
+
+    .name-selskab-hero {
+        width: 100vw;
+    }
+    .name-text-selskaber {
+        width: 100vw;
+        height: 55vh;
+    }
+
+    .name-img-selskaber img {
+        width: 100vw;
+    }
+    .name-menu-selskaber {
+        width: 100vw;
+    }
+
+    .flexbox-selskab {
+        width: 100vw;
+    }
+    .selskab-menu {
+        width: 50%;
+        height: 10vh; 
+    }
+
+    .lokale-info {
+        width: 100vw;
+    }
+    
+    .lokale-img {
+        width: 100vw;
+    }
     /*SELSKABS UNDERSIDER*/
     .grid-container-bryllup{
         display: grid;
