@@ -125,7 +125,7 @@
     .grid-container-season{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: {
+        grid-template-areas: 
         'forret'
         'forretImg'
         'hovedret'
@@ -135,7 +135,9 @@
         'tilbage';
     }
 
-    
+    .name-banner-menu > h1{
+        font-size: 7vw;
+    }
     .months{
         transform: translateY(-14px);
     }  
@@ -154,8 +156,31 @@
             margin: 0;
         }
          
-       
-           
-        
+    /*SPIS HOS MEST*/
+    .grid-container-hosMest{
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'hosMest'
+        'fredag1'
+        'fredag2'
+        'fredag3'
+        'fredag4';
+    }
+        /*footeren er weird i Spis hos Mest*/
+       .hosMest{
+           transform: translateY(642px);
+       } 
+
+       .tekst-hosMest{
+        width: 70vw;
+        height: 31vh;
+        margin: 1vh auto;
+       }
+
+       .redbox{
+           width: 70vw;
+       }
 
 }

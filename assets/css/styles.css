@@ -732,21 +732,11 @@ footer {
 
 /*Grid naming*/
 
-.name-hosMest {
-    grid-area: hosMest;
-}
-.name-name-fredag1 {
-    grid-area: fredag1;
-}
-.name-name-fredag2 {
-    grid-area: fredag2;
-}
-.name-name-fredag3 {
-    grid-area: fredag3;
-}
-.name-name-fredag4 {
-    grid-area: fredag4;
-}
+.name-hosMest {grid-area: hosMest;}
+.name-name-fredag1 {grid-area: fredag1;}
+.name-name-fredag2 {grid-area: fredag2;}
+.name-name-fredag3 {grid-area: fredag3;}
+.name-name-fredag4 {grid-area: fredag4;}
 
 .grid-container-hosMest {
     display: grid;
