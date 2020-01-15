@@ -433,19 +433,21 @@ h2.long {
 .bryllup-menu {
     padding: 5%;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .name-menu-bryllup {grid-area: menuBryllup;}
 .name-pris1-bryllup {grid-area: pris1;}
 .name-pris2-bryllup {grid-area: pris2;}
+.name-others {grid-area: others;}
 
 .grid-container-bryllup {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-areas: 
     'menuBryllup menuBryllup'
-    'pris1 pris2';
-    background-color: #ffffff;
+    'pris1 pris2'
+    'others others';
     width: 40vw;
     margin: auto;
 }
@@ -459,10 +461,26 @@ h2.long {
     font-weight: bold;
 }
 
+
+.name-others {
+    padding: 0vh 2vw;
+    background-color: #ffffff;
+    margin-top: 2vh;
+}
+
+.name-others a{
+    color: #191c27;
+}
+
 .pris-bryllup {
     text-align: center;
     color: #ffffff;
 }
+
+.selskaber-hero {
+    width: 100%;
+}
+
 /* OM OS PAGE */
 
 .grid {
@@ -570,7 +588,9 @@ footer {
     'articleMenu articleMenu priceMenu priceMenu';
 }
 
-
+.name-banner-menu > h1{
+    font-size: 3vw;
+}
 .wrapper {
     margin: 5vh 10vw;
 }
@@ -582,12 +602,21 @@ footer {
     margin-right: 2.5vw;
     padding: 2vh 2vw;
 }
-
+.season-container{
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+}
 .menu-icon{
-    transform: translate(120px, -50px);
+    transform: translate(130px, -140px);
 }
 .menu-icon1{
     transform: translate(310px, -22px);
+}
+.season-menu > h3{
+    transform: translate(100px, -190px);
+    color: white;
+    font-size: 2vw;
 }
 .img-container-menu{
     width: 20vw;
@@ -656,32 +685,20 @@ footer {
 }
 
 /*ÅRSTIDS MENUER*/
-
+.season-name {
+    text-align: center;
+}
+.months{
+    transform: translateY(-38px);
+}
 /*Grid naming*/
 
-.name-forret {
-    grid-area: forret;
-}
-
-.name-forret-img {
-    grid-area: forretImg;
-}
-
-.name-hovedret {
-    grid-area: hovedret;
-}
-
-.name-hovedret-img {
-    grid-area: hovedretImg;
-}
-
-.name-dessert {
-    grid-area: dessert;
-}
-
-.name-dessert-img {
-    grid-area: dessertImg;
-}
+.name-forret {grid-area: forret;}
+.name-forret-img {grid-area: forretImg;}
+.name-hovedret {grid-area: hovedret;}
+.name-hovedret-img {grid-area: hovedretImg;}
+.name-dessert {grid-area: dessert;}
+.name-dessert-img {grid-area: dessertImg;}
 
 .grid-container-season {
     display: grid;
@@ -755,9 +772,12 @@ footer {
 }
 
 .tekst-hosMest p {
-    padding: 4vh 5vw;
+    padding-top: 2vh;
+    padding-bottom: 0vh;
+    padding-right: 4vw;
     text-align: center;
-    line-height: 1.5;
+    line-height: 31px;
+    padding-left: 4vw;
 }
 
 .redbox {
@@ -765,8 +785,7 @@ footer {
     width: 35vw;
     height: 6vh;
     cursor: pointer;
-    transform: translateY(-40px);
-}
+    transform: translateY(-6px);
 }
 
 .redbox p {
