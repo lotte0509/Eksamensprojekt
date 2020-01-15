@@ -769,7 +769,7 @@ footer {
 }
 
 .tekst-hosMest {
-    margin: auto;
+    margin: 4vh auto;
     width: 35vw;
     height: 26vh;
     background-color: rgba(25, 28, 39, 0.788);
