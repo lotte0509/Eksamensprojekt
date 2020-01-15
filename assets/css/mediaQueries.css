@@ -1,9 +1,9 @@
-@media (max-width: 420px) { 
+@media screen and (max-width: 426px) { 
     footer {
         display: block;
     }
     .social > a {
-        font-size: 50px;
+        font-size: 12vw;
         margin: 5px;
     }
     .social {
@@ -13,32 +13,31 @@
     }
 
     .links {
-        display: flex;
         float: right;
-        margin: 2vh 15vw;
+        margin: 2vh 12vw;
     }
+
     .links > a {
         margin-right: 10px;
     }
     .stars {
         display: block;
-        margin: 0;
+        margin: 0 30vw;
     }
     .starImg {
-        height: 60px;
+        height: 50px;
     }
     footer > .imgs {
         margin: 0;
     }
 
     .madmedmest {
-        width: 40vw;
-        margin:0;
+        width: 90vw;
+        margin:0 5vw;
     }
     .gazelle {
-        width: 40vw;
+        display: none;
     }
-
 
     .wrapper {
         margin: 0;
@@ -104,7 +103,7 @@
     .grid-container-season{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas: {
         'forret'
         'forretImg'
         'hovedret'
@@ -112,10 +111,9 @@
         'dessert'
         'dessertImg'
         'tilbage';
-}
-    .season-name > h1{
-        font-size: 7vw;
     }
+}
+    
     .months{
         transform: translateY(-14px);
     }  
