@@ -752,7 +752,7 @@ footer {
 
 .grid-container-hosMest {
     display: grid;
-    height: 127vh;
+    height: 134vh;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
     grid-template-areas: 
@@ -772,7 +772,7 @@ footer {
     margin: auto;
     width: 35vw;
     height: 26vh;
-    background-color: rgba(25, 28, 39, 0.445);
+    background-color: rgba(25, 28, 39, 0.788);
     font-size: 18px;
     color: #ffffff;
 }
@@ -803,7 +803,7 @@ footer {
 
 .fredag {
     background-color: #ffffff;
-    height: 37vh;
+    height: 40vh;
     padding: 2vh 2vw;
 }
 
