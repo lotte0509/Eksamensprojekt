@@ -112,7 +112,9 @@
         'dessertImg'
         'tilbage';
     }
-
+    .name-banner-menu > h1{
+        font-size: 7vw;
+    }
     .months{
         transform: translateY(-14px);
     }  
