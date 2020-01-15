@@ -102,9 +102,11 @@
         'dessertImg'
         'tilbage';
 }
-    /* .grid-item{
-        width: 100%;
-    } */
-    
+    .season-name > h1{
+        font-size: 7vw;
+    }
+    .months{
+        transform: translateY(-14px);
+    }    
     
 }
