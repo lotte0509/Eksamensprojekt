@@ -529,7 +529,7 @@ footer {
 
 /*Grid naming*/
 
-  .name-banner-menu {grid-area: bannerMenu;}
+.name-banner-menu {grid-area: bannerMenu;}
 .name-forår-menu {grid-area: forårMenu;}
 .name-sommer-menu {grid-area: sommerMenu;}
 .name-efterår-menu {grid-area: efterårMenu;}
@@ -649,37 +649,32 @@ footer {
 /*ÅRSTIDS MENUER*/
 
 /*Grid naming*/
-
-.name-forret {
-    grid-area: forret;
+.name-tilbage {
+    background-color: #96192b;
+    color: #ffffff;
+    height: 6vh;
+    text-align: center;
+    font-weight: bold;
+}
+.name-tilbage h3 {
+    margin: 0;
+    padding: 1vh;
 }
 
-.name-forret-img {
-    grid-area: forretImg;
-}
-
-.name-hovedret {
-    grid-area: hovedret;
-}
-
-.name-hovedret-img {
-    grid-area: hovedretImg;
-}
-
-.name-dessert {
-    grid-area: dessert;
-}
-
-.name-dessert-img {
-    grid-area: dessertImg;
-}
+.name-tilbage {grid-area: tilbage;}
+.name-forret {grid-area: forret;}
+.name-forret-img {grid-area: forretImg;}
+.name-hovedret {grid-area: hovedret;}
+.name-hovedret-img {grid-area: hovedretImg;}
+.name-dessert {grid-area: dessert;}
+.name-dessert-img {grid-area: dessertImg;}
 
 .grid-container-season {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
-    '. forret forret forret forretImg forretImg .'
+    'tilbage forret forret forret forretImg forretImg .'
     '. hovedretImg hovedretImg hovedret hovedret hovedret .'
     '. dessert dessert dessert dessertImg dessertImg .';
 }
