@@ -132,8 +132,6 @@ footer > .imgs {
 .hero {
     width: 100%;
     height: 624px;
-    /* border: 1px solid orange; just to keep track of it */
-    /*transform: translateY(30px);*/
 }
 
 .hero-img {
@@ -566,7 +564,7 @@ footer {
 .name-sommer-menu {grid-area: sommerMenu;}
 .name-efterår-menu {grid-area: efterårMenu;}
 .name-vinter-menu {grid-area: vinterMenu;}
-.menubox {grid-area: menubox;}
+.menubox        {grid-area: menubox;}
 .name-article-menu {grid-area: articleMenu;}
 .name-img-menu {grid-area: imgMenu;}
 .name-price-menu {grid-area: priceMenu;}
@@ -637,7 +635,6 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 
 .name-article-menu {
     margin-right: 2.5vw;
@@ -891,3 +888,4 @@ h2.padding {
 .kort2 {
     margin-right: 20px;
 }
+

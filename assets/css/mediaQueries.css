@@ -1,0 +1,91 @@
+@media screen and (max-width: 420px) { 
+    footer {
+        display: block;
+        padding-bottom: none;
+    }
+    .social > a {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .social {
+        margin: 0;
+    }
+
+    .links {
+        margin-top: 0;
+    }
+    .stars {
+        display: block;
+        margin: 0;
+    }
+    .starImg {
+        height: 60px;
+    }
+    footer > .imgs {
+        margin: 0;
+    }
+
+    .madmedmest {
+        width: 40vw;
+        margin:0;
+    }
+    .gazelle {
+        width: 40vw;
+    }
+
+
+    .wrapper {
+        margin: 0;
+    }   
+    
+    .grid-container-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'bannerMenu bannerMenu' 
+            'season-container season-container' 
+            'menubox menubox'
+            'imgMenu imgMenu' 
+            'articleMenu articleMenu'
+            'priceMenu priceMenu';
+    }
+    
+    .menubox {
+        margin-right: 2.5vw;
+        padding: 2vh 2vw;
+    }
+
+    .season-container{
+        display: block;
+    }
+
+    .menu-icon{
+        transform: translate(33px, -65px)
+    }
+
+    .season-menu > h3{
+        transform: translate(37px, -59px);
+        font-size: 16px;
+    }
+
+    .img-container-menu{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .menu-img5{
+        width: 100vw;
+        height: 80vw;
+    }
+    .name-article-menu {
+        margin:0;
+        padding: 2vh 2vw;
+        height: 50vh;
+    }
+
+    .pris {
+        width: 100vw;
+        transform: translateY(-5px);
+    }
+    
+}
