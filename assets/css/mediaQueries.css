@@ -284,11 +284,11 @@
     }
     .grid-item{
         width: 426px;
-        height: 100px;
+        /* height: 100px; */
     }
         /*Hero - landing*/
         .hero {
-           
+            height: 33vh;
         }
         
         .hero-img {
@@ -311,13 +311,34 @@
         }
         /*Main landing*/
         .cobox-index, .catering-box-index {
+            margin: 6px 1px 15px;
         }
         .co-text-index, .ca-text-index {
-    
         }
-        .btn-box{
+        /* .btn-box{
             transform: rotateX(-90deg);
+        } */
+        /*menu & vores historie - landing*/
+
+        .experience-menu {
+        margin: 0;
+        transform: translate(0px, 0px);
+        height: 46vh;
         }
+
+
+        .menu-text {
+            height: 46vh;
+        }
+
+        .img-container {
+   
+        }
+        .img-history{
+
+        }
+
+
         
 
     /*INFORMATIONS PAGE*/
