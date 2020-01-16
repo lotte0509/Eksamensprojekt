@@ -220,11 +220,8 @@ footer > .imgs {
 .experience-menu {
     display: flex;
     width: 630px;
-    /* height: 100%; */
     flex-direction: row;
-    /* margin-top: 30px;
-    margin-left: 30px; */
-    transform: translate(30px, 20px);
+    margin: 4vh 2vw;
 }
 
 
@@ -234,6 +231,7 @@ footer > .imgs {
     height: 300px;
     padding: 0 15px;
     text-align: center;
+    
 }
 
 .img-container {
@@ -282,10 +280,9 @@ footer > .imgs {
 
 .our-history {
     display: flex;
-    /* width: 630px; */
     height: 100%;
     flex-direction: row;
-    transform: translate(183px, 20px);
+    margin: 4vh 12vw
 }
 
 /*CSS GRID NAMING*/
@@ -293,7 +290,7 @@ footer > .imgs {
 .name-hero {grid-area: hero;}
 .name-cobox {grid-area: cobox;}
 .name-cateringbox {grid-area: cateringbox;}
-.name-menu {grid-area: experience-menu;}
+.name-menu {grid-area: experienceMenu;}
 .name-history {grid-area: our-history;}
 
 /*PLACEMENT IN GRID - DESKTOP*/
@@ -309,7 +306,7 @@ footer > .imgs {
     grid-template-areas: 
     'hero hero hero hero'
     'cobox cobox cateringbox cateringbox'
-    'experience-menu experience-menu our-history our-history'
+    'experienceMenu experienceMenu our-history our-history'
     ;
 }
 

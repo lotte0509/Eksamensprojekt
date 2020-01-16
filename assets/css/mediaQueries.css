@@ -265,11 +265,8 @@
         grid-template-areas: 
         'hero'
         'cobox'
-        /* 'cotext'
-        'btnbox'
-        'imgSelskab' */
         'cateringbox'
-        'experience-menu' 
+        'experienceMenu' 
         'our-history';
     }
     .main-container{
@@ -277,75 +274,67 @@
         margin: 0;
     }
     .grid-item{
-        width: 426px;
-        /* height: 100px; */
+        width: 70%;
     }
-        /*Hero - landing*/
-        .hero {
-            height: 33vh;
-        }
-        
-        .hero-img {
-        }
-        
-        .gradient-box {
-      
-        }
-        
-        .logo {
-          
-        }
-        
-        .intro-text {
-       
-        }
-        
-        .intro-text>p {
-            
-        }
-        /*Main landing*/
-        .cobox-index, .catering-box-index {
-            margin: 6px 1px 15px;
-        }
-        .co-text-index, .ca-text-index {
-        }
-        /* .btn-box{
-            transform: rotateX(-90deg);
-        } */
-        /*menu & vores historie - landing*/
 
-        .experience-menu {
-        margin: 0;
-        transform: translate(0px, 0px);
+    .name-imgSelskab {
+        display: none;
+    }
+
+    .img-catering {
+        display: none;
+    }
+    /*Hero - landing*/
+    .hero {
+        height: 33vh;
+    }
+    
+    /*Main landing*/
+    .cobox-index, .catering-box-index {
+        margin: 6px 1px 15px;
+    }
+    .co-text-index, .ca-text-index {
+    }
+    /* .btn-box{
+        transform: rotateX(-90deg);
+    } */
+    /*menu & vores historie - landing*/
+
+    /*.experience-menu {
         height: 46vh;
-        }
+    }*/
+    .experience-menu {
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .menu-text {
+        height: 46vh;
+    }
 
-
-        .menu-text {
-            height: 46vh;
-        }
-
-        .img-container {
-            height: 15vh;
-            width: 60vw;
-        }
-        .our-history{
-            height: 26vh;
-            transform: translate(0px, 0px);
-        }
-        .img-history{
-            margin: 13px 0;
+    .img-container {
+        height: 15vh;
+        width: 60vw;
+    }
+    .our-history{
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        margin: 0;
+    }
+    .img-history{
+        margin: 0;
         height: 30vh;
-        width: 90vw;
-        }
-        .gradient-box2{
-            margin: 0;
-            width: 91vw;
-        }
-        .landing-footer{
-            transform: translate(0px, 114px);
-            height: 36vh;
-        }
+        width: 100vw;
+    }
+    .gradient-box2{
+        margin: 0;
+        width: 100vw;
+    }
+    .landing-footer{
+        transform: translate(0px, 114px);
+        height: 36vh;
+    }
 
 
         
