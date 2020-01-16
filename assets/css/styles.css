@@ -126,6 +126,7 @@ footer > .imgs {
 .gazelle {
     width: 150px;
 }
+/*LANDING PAGE*/
 
 /*HERO*/
 
@@ -309,10 +310,7 @@ footer > .imgs {
     'hero hero hero hero'
     'cobox cobox cateringbox cateringbox'
     'experience-menu experience-menu our-history our-history'
-    /* 'cobox cobox cobox cateringbox cateringbox cateringbox'; */
     ;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; */
 }
 
 /*SELSKABER PAGE*/
@@ -683,7 +681,7 @@ h2.long {
     text-align: center;
 }
 .months{
-    transform: translateY(-38px);
+    transform: translateY(-16px);
 }
 /*Grid naming*/
 

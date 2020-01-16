@@ -1,4 +1,6 @@
 @media screen and (max-width: 426px) { 
+    /*HEADER*/
+    /*FOOTER*/
     footer {
         display: block;
     }
@@ -231,7 +233,7 @@
         width: 70vw;
     }
 
-/*OM OS SIDEN*/
+    /*OM OS SIDEN*/
     .grid {
         display: grid;
         grid-template-columns: 1fr ;
@@ -258,4 +260,33 @@
         padding: 10px 15px;
     }
 
-}
+    /*LANDING PAGE*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'hero hero'
+        'cobox cobox'
+        'cateringbox cateringbox'
+        'experience-menu experience-menu' 
+        'our-history our-history';
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+
+    /*INFORMATIONS PAGE*/
+    .grid-container-kontakt{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-areas: 
+        'adresse kontakt tider'
+        'intro kort kort';
+    }
+
+
+
+
+
+}   
