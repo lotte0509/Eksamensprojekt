@@ -291,18 +291,11 @@
     
     /*Main landing*/
     .cobox-index, .catering-box-index {
-        margin: 6px 1px 15px;
+        margin: 6px 0px 15px;
     }
     .co-text-index, .ca-text-index {
     }
-    /* .btn-box{
-        transform: rotateX(-90deg);
-    } */
-    /*menu & vores historie - landing*/
 
-    /*.experience-menu {
-        height: 46vh;
-    }*/
     .experience-menu {
         width: 100vw;
         margin: 0;
@@ -327,6 +320,8 @@
         height: 30vh;
         width: 100vw;
     }
+
+    
     .gradient-box2{
         margin: 0;
         width: 100vw;
