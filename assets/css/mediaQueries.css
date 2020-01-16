@@ -206,10 +206,6 @@
         font-size: 7vw;
         padding-left: 12px;
     }
-        /*footeren er weird i Spis hos Mest*/
-       .hosMest{
-           transform: translateY(575px);
-       } 
 
     .tekst-hosMest{
     width: 70vw;
@@ -226,6 +222,10 @@
         background-color: #ffffff;
         height: 100%;
         padding: 2vh 2vw;
+    }
+
+    #footer-spis {
+        margin-top: 10vh;
     }
     /*OM OS SIDEN*/
     .grid {

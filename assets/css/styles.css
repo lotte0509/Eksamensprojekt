@@ -728,7 +728,6 @@ footer > .imgs {
 
 .grid-container-hosMest {
     display: grid;
-    height: 134vh;
     grid-gap: 5%;
     grid-template-columns: 47.5% 47.5%;
     grid-template-areas: 
@@ -747,7 +746,7 @@ footer > .imgs {
 .tekst-hosMest {
     margin: 4vh auto;
     width: 35vw;
-    height: 26vh;
+    height: 30vh;
     background-color: rgba(25, 28, 39, 0.788);
     font-size: 18px;
     color: #ffffff;
@@ -779,7 +778,7 @@ footer > .imgs {
 
 .fredag {
     background-color: #ffffff;
-    height: 40vh;
+    height: 100%;
     padding: 2vh 2vw;
 }
 
@@ -799,6 +798,9 @@ footer > .imgs {
     text-align: center;
 }
 
+#footer-spis {
+    margin-top: 15vh;    
+} 
 /* INFORMATIONSSIDE */
 
 .grid-container-kontakt {
@@ -820,7 +822,7 @@ footer > .imgs {
     grid-template-areas:
     'park kort2 overnatning kort3';
     background-color: #96192b;
-    padding: 5vh 2vw;
+    padding: 5vh 10vw;
 
 }
 .parkering { grid-area: park; }
@@ -835,13 +837,14 @@ footer > .imgs {
 
 .intro {
     background-color: #fff;
-    padding: 120px 50px;
+    text-align: center;
+    padding: 100px 0 0 50px;
     margin: 20px 20px 20px 0;
 }
 .intro > p {
+    width: 280px;
     font-size: 20px;
     line-height: 1.5em;
-    text-align: center;
 }
 h2.center {
     text-align: center;
