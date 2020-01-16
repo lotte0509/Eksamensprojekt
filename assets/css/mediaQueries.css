@@ -189,6 +189,10 @@
     .lokale-img {
         width: 100vw;
     }
+    .banner-tekst {
+        margin: 0;
+    }
+
     /*SELSKABS UNDERSIDER*/
     .grid-container-bryllup{
         display: grid;
