@@ -587,7 +587,6 @@ h2.long {
 .season-container{
     display: flex;
     flex-direction: row;
-    height: 45vh;
 }
 .menu-icon{
     transform: translate(130px, -140px);
@@ -596,7 +595,7 @@ h2.long {
     transform: translate(310px, -22px);
 }
 .season-menu > h3{
-    transform: translate(100px, -190px);
+    transform: translate(6vw, -22vh);
     color: white;
     font-size: 2vw;
 }
