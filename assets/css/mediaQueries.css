@@ -215,12 +215,18 @@
     width: 70vw;
     height: 31vh;
     margin: 1vh auto;
+    font-size: 0.8em;
     }
 
     .redbox{
         width: 70vw;
     }
 
+    .fredag {
+        background-color: #ffffff;
+        height: 100%;
+        padding: 2vh 2vw;
+    }
     /*OM OS SIDEN*/
     .grid {
         display: grid;
