@@ -275,4 +275,18 @@
     .main-container{
         width: 100%;
     }
-}
+
+    /*INFORMATIONS PAGE*/
+    .grid-container-kontakt{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-areas: 
+        'adresse kontakt tider'
+        'intro kort kort';
+    }
+
+
+
+
+
+}   
