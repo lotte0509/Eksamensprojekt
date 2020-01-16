@@ -1,5 +1,7 @@
 @media screen and (max-width: 426px) { 
     /*HEADER*/
+
+
     /*FOOTER*/
     footer {
         display: block;
@@ -242,30 +244,129 @@
     }
 
     /*LANDING PAGE*/
+    /*css naming*/
+    .name-btnbox{grid-area: btnbox;}
+    .name-imgSelskab{grid-area: imgSelskab;}
+    .name-cotext{grid-area: cotext;}
     .grid-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        'hero hero'
-        'cobox cobox'
-        'cateringbox cateringbox'
-        'experience-menu experience-menu' 
-        'our-history our-history';
-        width: 100%;
+        'hero'
+        'cobox'
+        /* 'cotext'
+        'btnbox'
+        'imgSelskab' */
+        'cateringbox'
+        'experience-menu' 
+        'our-history';
     }
     .main-container{
-        width: 100%;
+        width: 426px;
+        margin: 0;
     }
+    .grid-item{
+        width: 426px;
+        /* height: 100px; */
+    }
+        /*Hero - landing*/
+        .hero {
+            height: 33vh;
+        }
+        
+        .hero-img {
+        }
+        
+        .gradient-box {
+      
+        }
+        
+        .logo {
+          
+        }
+        
+        .intro-text {
+       
+        }
+        
+        .intro-text>p {
+            
+        }
+        /*Main landing*/
+        .cobox-index, .catering-box-index {
+            margin: 6px 1px 15px;
+        }
+        .co-text-index, .ca-text-index {
+        }
+        /* .btn-box{
+            transform: rotateX(-90deg);
+        } */
+        /*menu & vores historie - landing*/
+
+        .experience-menu {
+        margin: 0;
+        transform: translate(0px, 0px);
+        height: 46vh;
+        }
+
+
+        .menu-text {
+            height: 46vh;
+        }
+
+        .img-container {
+   
+        }
+        .img-history{
+
+        }
+
+
+        
 
     /*INFORMATIONS PAGE*/
     .grid-container-kontakt{
         display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        'adresse kontakt tider'
-        'intro kort kort';
+        'adresse'
+        'kontakt'
+        'tider'
+        'intro'
+        'kort';
+        grid-gap: 2px;
     }
 
+    .adresse, .kontakt, .åbningstider{
+        padding: 0 5px;
+        font-size: 3vw;
+    }
+
+    .intro{
+        padding: 0;
+        margin: 20px 0;
+    }
+    .kort{
+        margin: 0;
+    }
+
+    .grid-container-kort{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'park'
+        'kort2'
+        'overnatning'
+        'kort3';
+        /* padding: 0; */
+    }
+    
+    .parkering > p, .overnatning > p {
+        padding: 0 10px 0 10px;
+    }
+    .kort2 {
+        margin-right: 20px;
+    }
 
 
 
