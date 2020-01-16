@@ -263,18 +263,78 @@
     /*LANDING PAGE*/
     .grid-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        'hero hero'
-        'cobox cobox'
-        'cateringbox cateringbox'
-        'experience-menu experience-menu' 
-        'our-history our-history';
-        width: 100%;
+        'hero'
+        'cobox'
+        'cateringbox'
+        'experience-menu' 
+        'our-history';
     }
     .main-container{
-        width: 100%;
+        width: 426px;
+        margin: 0;
     }
+    .grid-item{
+        width: 426px;
+        height: 100px;
+    }
+        /*Hero - landing*/
+        .hero {
+            width: 100%;
+            height: 624px;
+        }
+        
+        .hero-img {
+            width: 100%;
+        }
+        
+        .gradient-box {
+            position: relative;
+            width: 50%;
+            height: 625px;
+            transform: translateY(-630px);
+            background-image: linear-gradient(90deg, #191C27, rgba(255, 255, 255, 0));
+            z-index: 1;
+        }
+        
+        .logo {
+            position: relative;
+            width: 550px;
+            height: 80px;
+            padding-left: 50px;
+            margin-top: 50px;
+            /* z-index: 2; */
+        }
+        
+        .intro-text {
+            color: white;
+            padding-left: 50px;
+            font-size: 1.5vw;
+            /* z-index: 2; */
+        }
+        
+        .intro-text>p {
+            font-size: 1vw;
+            margin-top: 30px;
+            padding: 0 0px;
+        }
+        /*Main landing*/
+        .cobox-index, .catering-box-index {
+            display: flex;
+            height: 200px;
+            margin: 40px 30px 10px 30px;
+        }
+        .co-text-index, .ca-text-index {
+            display: inline-block;
+            background-color: white;
+            /* width: 50%; */
+            padding: 0 10px;
+            margin: 0;
+            line-height: 27px;
+            text-align: center;
+        }
+        
 
     /*INFORMATIONS PAGE*/
     .grid-container-kontakt{
