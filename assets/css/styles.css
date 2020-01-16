@@ -210,7 +210,7 @@ footer > .imgs {
     height: 200px;
     width: 758px;
     background-image: url('../images/Landing_2.jpg');
-    /* background-size: contain; */
+
 }
 
 
@@ -341,7 +341,7 @@ footer > .imgs {
 
 .name-text-selskaber {
     background-color: white;
-    height: 40vh;
+    height: 100%;
     padding: 1vh 2vw;
     line-height: 1.8;
 }
@@ -409,11 +409,8 @@ footer > .imgs {
     background-color: #fff;
     padding: 10px 55px;
 }
-h2.long {
-    text-align: center;
-}
+
 .lokale-tekst {
-    text-align: center;
     padding-top: 10px;
 }
 
@@ -622,7 +619,7 @@ h2.long {
     background-image: url('../images/Menu_1.jpg');
     width: 25vw;
     height: 20vw;
-    margin-top: 20px;
+    margin-top: 14px;
     background-size: contain;
     background-repeat: no-repeat;
 }
