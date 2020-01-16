@@ -263,13 +263,16 @@
     /*LANDING PAGE*/
     .grid-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        'hero'
-        'cobox'
-        'cateringbox'
-        'experience-menu'
-        'our-history'
-        ;
+        'hero hero'
+        'cobox cobox'
+        'cateringbox cateringbox'
+        'experience-menu experience-menu' 
+        'our-history our-history';
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
     }
 }
