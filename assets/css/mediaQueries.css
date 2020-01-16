@@ -279,12 +279,46 @@
     /*INFORMATIONS PAGE*/
     .grid-container-kontakt{
         display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        'adresse kontakt tider'
-        'intro kort kort';
+        'adresse'
+        'kontakt'
+        'tider'
+        'intro'
+        'kort';
+        grid-gap: 2px;
     }
 
+    .adresse, .kontakt, .åbningstider{
+        padding: 0 5px;
+        font-size: 3vw;
+    }
+
+    .intro{
+        padding: 0;
+        margin: 20px 0;
+    }
+    .kort{
+        margin: 0;
+    }
+
+    .grid-container-kort{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'park'
+        'kort2'
+        'overnatning'
+        'kort3';
+        /* padding: 0; */
+    }
+    
+    .parkering > p, .overnatning > p {
+        padding: 0 10px 0 10px;
+    }
+    .kort2 {
+        margin-right: 20px;
+    }.
 
 
 
